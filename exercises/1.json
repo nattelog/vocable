@@ -1,0 +1,4 @@
+{
+  "q": "Vad innebär det att en signal är strikt bandbegränsad? Approximativt bandbegränsad?",
+  "a": "Om X(f) är nollskild på endast ett ändligt intervall frekvensintervall sägs x(t) vara strikt bandbegränsad. Om X(f) är nära noll utanför något ändligt frekvensintervall sägs x(t) vara approximativt bandbegränsad."
+}

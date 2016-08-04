@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Vocable</title>
+    <link rel="stylesheet" href="build/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="exercises">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Exercises</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div id="exercisesTable" class="col-md-12"></div>
+        </div>
+      </div>
+
+      <div id="exercise">
+        <div class="row">
+          <div id="exerciseContent" class="col-md-12">
+            <p class="lead">
+              <i id="exitButton" class="fa fa-chevron-left"></i>
+              <span id="questionId" class="lead"></span>
+            </p>
+            <h3 id="question"></h3>
+            <p id="answer"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row buttons">
+          <div class="col-xs-6">
+            <button class="btn btn-default" type="button" id="leftButton">
+            </button>
+          </div>
+          <div class="col-xs-6">
+            <button class="btn btn-default" type="button" id="rightButton">
+            </button>
+          </div>
+        </div>
+
+        <div class="row stats">
+          <div class="col-md-12">
+            <div class="progress">
+              <div id="passCount" class="progress-bar progress-bar-success" style="width: 0%"> </div>
+              <div id="failCount" class="progress-bar progress-bar-danger" style="width: 0%"></div>
+              <div id="unseenCount" class="progress-bar progress-bar-default" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="build/client.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</html>
