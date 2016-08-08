@@ -1,0 +1,4 @@
+{
+  "q": "Vad innebär det att en vågform har konstant envelopp? Är detta önskvärt eller inte, och isåfall varför (eller varför inte)?",
+  "a": "Att en vågform har konstant envelopp underlättar kraven på signalförstärkare som då får låga krav på linjäritet och låga krav på hög in/ut-verkningsgrad. Därför vill man att enveloppen inte ska variera utan vara konstant."
+}

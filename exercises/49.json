@@ -1,0 +1,4 @@
+{
+  "q": "Om ett mynt med p = 0.1 kastas 100 gånger, vad kan vi förvänta oss att se?",
+  "a": "I det typiska fallet, p * 100 stycken av den ena sidan och resten av den andra. Alltså 10 stycken av den ena sidan och 90 stycken av den andra."
+}

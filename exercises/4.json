@@ -1,0 +1,4 @@
+{
+  "q": "Definiera Fouriertransformen X(f) av en tidskontinuerlig signal x(t), samt dess invers",
+  "a": "X(f) = integralen x(t) * e^(-j2πft) från - till + oändligheten.\nx(t) = integralen X(f) * e^(j2πft) från - till + oändligheten."
+}

@@ -1,0 +1,4 @@
+{
+  "q": "Om en kodbok har min-avståndet d, hur många fel (antal felaktigt mottagna binära siffror) kan denna rätta och varför?",
+  "a": "Antalet fel som kan rättas är (d - 1) / 2 avrundat nedåt."
+}

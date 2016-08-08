@@ -1,0 +1,4 @@
+{
+  "q": "Beskriv de olika rollerna hos en digital kommunikationslänk",
+  "a": "Länken består av en sändare, en kanal och en mottagare. Hos sändaren komprimeras, felskyddas och moduleras informationen. Informationen sänds sedan över kanalen till mottagaren. Hos mottagaren demoduleras och avkodas informationen och tillslut packas den upp."
+}

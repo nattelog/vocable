@@ -1,0 +1,4 @@
+{
+  "q": "Vad är en avkodare? Vad arbetar avkodaren efter för princip?",
+  "a": "Avkodaren sitter hos mottagaren och används för att uppskatta vilket meddelande som sändes. Den gör en bästa gissning av vad som skickades då fel kan ha uppstått på vägen."
+}

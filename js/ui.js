@@ -153,9 +153,23 @@
       }
     });
 
-    passCount.style.width = Math.round(100 * passed / total) + '%';
-    failCount.style.width = Math.round(100 * failed / total) + '%';
-    unseenCount.style.width = Math.round(100 * unseen / total) + '%';
+    var passedPerc = Math.round(100 * passed / total);
+    var failedPerc = Math.round(100 * failed / total);
+    var unseenPerc = Math.round(100 * unseen / total);
+    var rest = passedPerc + failedPerc + unseenPerc - 100;
+
+    if (rest !== 0) {
+      if (unseenPerc === 0) {
+        failedPerc = failedPerc - rest;
+      }
+      else {
+        unseenPerc = unseenPerc - rest;
+      }
+    }
+
+    passCount.style.width = passedPerc + '%';
+    failCount.style.width = failedPerc + '%';
+    unseenCount.style.width = unseenPerc + '%';
 
     passCount.innerText = passed;
     failCount.innerText = failed;
@@ -217,23 +231,24 @@
 
   function populateTable() {
     var table = document.getElementById('exercisesTable');
-    var count = Object.keys(exercises).length;
+    var keys = Object.keys(exercises);
 
-    for (var i = 1; i <= count; ++i) {
+    keys.forEach(function(id) {
+      var exercise = exercises[id];
       var item = document.createElement('span');
 
       item.className = 'table-item badge';
-      item.id = 'exerciseItem_' + i;
-      item.innerHTML = i;
+      item.id = 'exerciseItem_' + id;
+      item.innerHTML = id;
       table.appendChild(item);
 
-      var button = document.getElementById('exerciseItem_' + i);
+      var button = document.getElementById('exerciseItem_' + id);
       button.addEventListener('click', function(elem) {
         showExercise(elem.target.innerText);
       });
 
-      exercises[i].element = item;
-    }
+      exercise.element = item;
+    });
   }
 
   function init() {

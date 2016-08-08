@@ -1,0 +1,4 @@
+{
+  "q": "Vad är vikning? När uppstår det och hur kan det undvikas?",
+  "a": "Vikning är ett fenomen som uppstår vid sampling av en signal som innehåller frekvenskomponenter över Nyquistfrekvensen. De höga frekvenserna \"viks\" ner i samplingsområdet där de inte kan skiljas från lägre frekvenser och därför orsakar vikning. Kan undvikas genom att lågpassfiltrera innan sampling."
+}

@@ -1,0 +1,4 @@
+{
+  "q": "Vad är karaktäristisk impedans hos en kabel? Vilka parametrar beror den på?",
+  "a": "Den karaktäristiska impedansen hos en kabel är förhållandet mellan amplituder för spänning och ström när en våg fortplantar sig längs kabeln. Vågen färdas i ena riktningen och dess reflektioner i den andra. Impedansen bestäms av förhållandet mellan mittledardiameter och skärmdiameter. Om en signal skickas genom en kabel kommer signalen förvrängas om inte impedansen matchas korrekt mot den karaktäristiska impedansen för kabeln."
+}

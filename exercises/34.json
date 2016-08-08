@@ -1,0 +1,4 @@
+{
+  "q": "Definiera signal-till-brus-förhållande (SNR) i en signal. Vad är betydelsen av SNR?",
+  "a": "SNR är kvoten mellan signalenergin hos x(t) och w(t) (bruset). Det anges ofta i dB-skala. Det definierar förhållandet mellan signalleffekten och den bruseffekt som förvanskar signalen."
+}

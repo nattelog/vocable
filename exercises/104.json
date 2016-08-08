@@ -1,0 +1,4 @@
+{
+  "q": "Vad är Rayleigh-fädning? Varför uppkommer denna och när är den en relevant modell?",
+  "a": "Det är en statistisk modell för effekten hos en utbredningsmiljö på en radiosignal, såsom den används av trådlösa enheter. Rayleigh-fädning ses som en rimlig modell för troposfärisk och jonosfärisk signalutbredning samt för effekten av kraftigt bebyggda stadsmiljör på radiosignaler. Rayleigh-fädning är mest tillämplig när det inte finns någon dominerande utbredning längs en linje mellan sändaren och mottagaren."
+}

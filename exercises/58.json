@@ -1,0 +1,4 @@
+{
+  "q": "Vad är förlustfri komprimering? Ge ett exempel",
+  "a": "Det är kompringing där ingen data går förlorad. Ett exempel är Huffman-kodning."
+}

@@ -1,0 +1,4 @@
+{
+  "q": "Vad är en vågformskanal?",
+  "a": "Den tar en inkommande vågform x(t) och levererar en utgående vågform y(t). Generellt kan man säga att y(t) = x(t)h(t) + w(t), där w(t) är brus."
+}

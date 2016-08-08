@@ -1,0 +1,4 @@
+{
+  "q": "Vad är en suddkanal? Vad har en sådan kanal för kapacitet?",
+  "a": "När en bit skickas i en suddkanal får mottagaren antingen själva biten och vet då att den är korrekt, eller så får den ett meddelande om att biten inte mottogs. Kapaciteten är 1 - sannolikheten för att biten inte kommer fram korrekt."
+}

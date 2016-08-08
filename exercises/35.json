@@ -1,0 +1,4 @@
+{
+  "q": "Beskriv en tumrelgel för SNR i en likformigt kvantiserad signal",
+  "a": "För varje extra bit i kvantiseringen ökar SNR med ~6 dB."
+}

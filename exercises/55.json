@@ -1,0 +1,4 @@
+{
+  "q": "Beskriv hur skulängdskodning fungerar. När förväntas sådan kodning fungera bra?",
+  "a": "Den beskriver hur många upprepade tecken som förekommer i följd hos en sträng. Den fungerar bra när en sträng ofta har upprepade tecken i följd."
+}

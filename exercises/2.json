@@ -1,4 +1,4 @@
 {
-  "q": "Question 2",
-  "a": "Answer 2"
+  "q": "Vad innebär det att en signal är strikt tidsbegränsad? Approximativt tidsbegränsad?",
+  "a": "Om en signal x(t) är noll överallt utanför ett ändligt tidsintervall sägs signalen vara tidsbegränsad. Om största delen av signalens energi är inom ett begränsat intervall sägs signalen vara approximativt tidsbegränsad.'"
 }

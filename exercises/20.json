@@ -1,0 +1,4 @@
+{
+  "q": "Hur snabbt måste man sampla för att undvika vikning och varför?",
+  "a": "För att undvika vikning måste signalen samplas med samplingsfrekvensen f_s >= 2B. Ju kortare observationsintervall desto snabbare måste vi sampla för att undvika vikning. Detta då den trunkerade signalen inte är strikt bandbegränsad så den kan inte samplas och rekonstrueras utan fel. Men den kan samplas och rekonstrueras approximativt."
+}

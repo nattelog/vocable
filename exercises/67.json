@@ -1,0 +1,4 @@
+{
+  "q": "Vad är en binärsymmetrisk kanal? Vad har en sådan kanal för kapacitet?",
+  "a": "En binärsymmetrisk kanal är en binär kanal där det är samma sannolikhet för en skickad 0:a att mottas som en 0:a som det är för en skickad 1:a att mottas som en 1:a. Kapaciteten för en binärsymmetrisk kanal är 1 - H_2(p) där H_2(p) är den binära entropin."
+}

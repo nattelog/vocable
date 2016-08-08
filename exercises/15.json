@@ -1,0 +1,4 @@
+{
+  "q": "Vad är nyttan med I/Q-repesentationen och varför används den i praktiken?",
+  "a": "Den är väldigt effektiv eftersom det går att producera en cosinus och en sinus med samma oscillator. På det sättet kan man modulera och demodulera både I- och Q-delen samtidigt."
+}

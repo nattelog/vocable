@@ -1,0 +1,4 @@
+{
+  "q": "Om en signal x(t) trunkeras till ett ändligt intervall [-T/2,T/2], vad händer då med X(f)?",
+  "a": "En signal kan inte vara strikt tidsbegränsad och strikt bandbegränsad samtidigt. En rektangel i tidsdomänen => En sinc i i frekvensdomänen."
+}

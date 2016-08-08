@@ -1,0 +1,4 @@
+{
+  "q": "Hur fungerar digital modulation? Vad är en symbol? Vad är linjär/olinjär modulation?",
+  "a": "Syftet med digital modulation är att kartlägga N binära siffror som erhålls efter kanalkodning.\nEn symbol är en sträng av N binära tecken som är uppdelade i delsträngar och sedan mappade i reella nummer s som kallas symboler.\nLinjär modulation eller puls-amplitud-modulation förenklar analysen och gör det relativt enkelt att återskapa symbolerna från signalren som mottogs från sändaren. Problemet med linjär modulation är att för smalbandiga signaler kommer den resulterande vågformen ha en tidsvarierande envelopp. Därför används istället fas-modulation som endast är meningsfull att använda för smalbandiga signaler."
+}

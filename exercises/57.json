@@ -1,0 +1,4 @@
+{
+  "q": "Vad kan man säga om relationen mellan längden på kodorden i en Huffman-kod och entropin hos källan som ska komprimeras?",
+  "a": "I en Huffman-kod är den förväntade kodordslängden summan av alla tecknens längd * deras sannolikhet att de påträffas. Den teoretiska gränsen som ges av entropin hos samma källa är summan av alla tecknens sannolikhet att de påträffas * log_2(samma sannolikhet)."
+}

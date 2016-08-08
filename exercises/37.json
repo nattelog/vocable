@@ -1,0 +1,4 @@
+{
+  "q": "Beskriv hur skattning av tidsfördröjningar med hjälp av korrelation fungerar",
+  "a": "Genom att beräkna z(tau) = integralen av x(t) * y(t + tau) från - till + oändligheten fås en graf med olika toppar. Det tau som ligger vid den högsta toppen är tidsfördröjningen."
+}

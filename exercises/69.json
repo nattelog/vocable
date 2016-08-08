@@ -1,0 +1,4 @@
+{
+  "q": "Vad är en kodbok (för kanalkodning)? Definiera dess takt och minsta avstånd. Beskriv hur takten relaterar till antal kodord och kodordens längd.",
+  "a": "Takten är log_2(antal kodord i kodboken) / kodordens längd. Takten har enheten \"bits per channel use\"."
+}

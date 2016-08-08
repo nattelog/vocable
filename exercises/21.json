@@ -1,0 +1,4 @@
+{
+  "q": "Beskriv vad ideal rekonstruktion är",
+  "a": "Summan av x[n] * p(t - nT_s), där p(t) är ett pulståg."
+}

@@ -1,0 +1,4 @@
+{
+  "q": "Beskriv en enkel modell för tidsfördjninings-skattnings-problemet",
+  "a": "Den mottagna signalen y = en skalning av x med fördröjning tau plus ett brus w."
+}

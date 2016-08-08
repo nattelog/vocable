@@ -1,0 +1,4 @@
+{
+  "q": "Vilka egenskaper har en signal som är väl lämpad till skattningar av tidsfördröjningar, och varför?",
+  "a": "En symmetrisk signal som är jämnt fördelad med sitt max i origo. Dess mångtydighetsfunktion får svaga s.k. \"spöktoppar\" som kan göra tidsuppskattningen dålig."
+}

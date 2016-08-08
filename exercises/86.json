@@ -1,0 +1,4 @@
+{
+  "q": "Vad är ett koherensintervall?",
+  "a": "Ett tidsfrekvensutrymme med varaktigheten T_c och bandbredd B_c. Om den skickade vågformen x(t) med bandbredd B och tidsintervall T får plats i ett koherensintervall så att T < T_c och B < B_c är den enda effekten hos x(t) amplitudskalning. "
+}
