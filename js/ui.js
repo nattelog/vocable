@@ -186,6 +186,16 @@
     updateButtons();
   }
 
+  function makeBlurry(element) {
+    element.style.color = 'transparent';
+    element.style.textShadow = '0 0 5px rgba(0, 0, 0, 0.5)';
+  }
+
+  function unBlur(element) {
+    element.style.color = 'black';
+    element.style.textShadow = 'none';
+  }
+
   function showExercise(id) {
     var _id = id || getRandomExercise();
 
@@ -197,6 +207,8 @@
     var questionId = document.getElementById('questionId');
     var question = document.getElementById('question');
     var answer = document.getElementById('answer');
+
+    makeBlurry(answer);
 
     questionId.innerText = 'Question ' + _id;
     question.innerText = exercise.q;
@@ -253,12 +265,17 @@
 
   function init() {
     var exitButton = document.getElementById('exitButton');
+    var answer = document.getElementById('answer');
 
     exercisePage.style.display = 'none';
     exercisesPage.style.display = 'none';
 
     populateTable();
     showExercises();
+
+    answer.addEventListener('click', function() {
+      unBlur(this);
+    });
 
     leftButton.addEventListener('click', leftButtonClick);
 

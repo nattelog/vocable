@@ -1,4 +1,4 @@
 {
-  "q": "Vad innebär det att en datamängd innehåller redundans? Ge exempel på redundans i skriven text på svenska",
-  "a": "Det innebär att det skulle kunna gå att skicka samma information med mindre bitar. T.ex. kan man i svenskan skriva \"Hejsan\" vilken är tre tecken mer än \"Hej\" men betyder precis samma sak."
+  "q": "Varför är det typiskt önskvärt att ta bort redundans med hjälp av datakompression?",
+  "a": "För att data med redundans innehåller onödig information som tar plats. Genom att ta bort redundans kan datafiler minskas i storlek."
 }
