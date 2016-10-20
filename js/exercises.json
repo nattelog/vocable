@@ -1,0 +1,406 @@
+{
+    "1": {
+        "q": "Vad innebär det att en signal är strikt bandbegränsad? Approximativt bandbegränsad?",
+        "a": "Om X(f) är nollskild på endast ett ändligt intervall frekvensintervall sägs x(t) vara strikt bandbegränsad. Om X(f) är nära noll utanför något ändligt frekvensintervall sägs x(t) vara approximativt bandbegränsad."
+    },
+    "2": {
+        "q": "Vad innebär det att en signal är strikt tidsbegränsad? Approximativt tidsbegränsad?",
+        "a": "Om en signal x(t) är noll överallt utanför ett ändligt tidsintervall sägs signalen vara tidsbegränsad. Om största delen av signalens energi är inom ett begränsat intervall sägs signalen vara approximativt tidsbegränsad.'"
+    },
+    "3": {
+        "q": "Definiera energin av en signal",
+        "a": "Energin = intergralen av x^2(t) från - till + oändligheten."
+    },
+    "4": {
+        "q": "Definiera Fouriertransformen X(f) av en tidskontinuerlig signal x(t), samt dess invers",
+        "a": "X(f) = integralen x(t) * e^(-j2πft) från - till + oändligheten.\nx(t) = integralen X(f) * e^(j2πft) från - till + oändligheten."
+    },
+    "5": {
+        "q": "Definiera Fouriertransformen X[F] av en tidsdiskret signal x[n] samt dess invers",
+        "a": "X[F] = summan av x[n] * e^(-j2πFn) från - till + oändligheten.\nx[n] = integralen av X[F] * e^(j2πFn) från -0.5 till +0.5."
+    },
+    "6": {
+        "q": "Ge två exempel på kvantitativa bandbreddsmått",
+        "a": "(i) η%-bandbredd. Den bandbredd inom vilken η av signalenergin finns.\n(ii) 3-dB-bandbredd.\n(iii) Effektiv bandbredd."
+    },
+    "7": {
+        "q": "Om en signal x(t) trunkeras till ett ändligt intervall [-T/2,T/2], vad händer då med X(f)?",
+        "a": "En signal kan inte vara strikt tidsbegränsad och strikt bandbegränsad samtidigt. En rektangel i tidsdomänen => En sinc i i frekvensdomänen."
+    },
+    "8": {
+        "q": "Formulera samplingsteoremet och ge en formel för rekonstruktion",
+        "a": "Om x(t) är bandbegränsad och den är samplad med en frekvens >= 2B. Den kan då rekonstrueras med x(t) = summan x(nT) * p(t - nT) över n, där p = sinc(t / T)."
+    },
+    "9": {
+        "q": "Vad är dimensionalitet? Vilken dimensionalitet har en signal som bor i [-T/2,T/2]x[-B,B] och varför?",
+        "a": "Värdet 2BT + 1 kallas dimensionalitet och är frihetsgraden av x(t) vilket är det minsta antal reellvärda koefficienter som behövs för att representera en signal som \"bor\" i [-T/2,T/2]x[-B,B]"
+    },
+    "10": {
+        "q": "Vad är skillnaden mellan en lågpass - (basband) och en smalbandig (passband/bandpass) signal?",
+        "a": "En lågpass-signal har s+in energi koncentrerad kring ett frekvensband runt frekvensen f = 0. En smalbandig signal är nollskild endast i ett band med sin bärfrekvens i mitten."
+    },
+    "11": {
+        "q": "Hur fungerar direkt demodulation (nedblandning)?",
+        "a": "Genom att multiplcera 2x(t) med en cosinus och lågpassfiltrera den flyttar man ner signalen till f = 0."
+    },
+    "12": {
+        "q": "Beskriv hur I/Q-modulering/demodulering fungerar",
+        "a": "Genom att summera en signal x_I(t) * cos(2πf_ct) med en signal x_Q(t) * -sin(2πf_ct) fås en IQ-modulerad signal x(t). För att demodulera x(t) multiplcerar man x(t) med 2cos(2πf_ct) och lågpassfiltrar den. Då får man ut x_I(t). På liknande sätt genom att multiplicera x(t) med -2sin(2πf_ct) och lågpassfiltrera den får man ut x_Q(t)."
+    },
+    "13": {
+        "q": "Definiera envelopp och fas för en smalbandig signal",
+        "a": "Enveloppen är roten ur x_I^2(t) + x_Q^2(t). "
+    },
+    "14": {
+        "q": "Vad har en liten tidsfördröjning för effekt på I- och Q-komponenterna för en smalbandig signal?",
+        "a": "Det är ungefär samma sak som att skifta enveloppen med 2πf_ct"
+    },
+    "15": {
+        "q": "Vad är nyttan med I/Q-repesentationen och varför används den i praktiken?",
+        "a": "Den är väldigt effektiv eftersom det går att producera en cosinus och en sinus med samma oscillator. På det sättet kan man modulera och demodulera både I- och Q-delen samtidigt."
+    },
+    "19": {
+        "q": "Vad är vikning? När uppstår det och hur kan det undvikas?",
+        "a": "Vikning är ett fenomen som uppstår vid sampling av en signal som innehåller frekvenskomponenter över Nyquistfrekvensen. De höga frekvenserna \"viks\" ner i samplingsområdet där de inte kan skiljas från lägre frekvenser och därför orsakar vikning. Kan undvikas genom att lågpassfiltrera innan sampling."
+    },
+    "20": {
+        "q": "Hur snabbt måste man sampla för att undvika vikning och varför?",
+        "a": "För att undvika vikning måste signalen samplas med samplingsfrekvensen f_s >= 2B. Ju kortare observationsintervall desto snabbare måste vi sampla för att undvika vikning. Detta då den trunkerade signalen inte är strikt bandbegränsad så den kan inte samplas och rekonstrueras utan fel. Men den kan samplas och rekonstrueras approximativt."
+    },
+    "21": {
+        "q": "Beskriv vad ideal rekonstruktion är",
+        "a": "Summan av x[n] * p(t - nT_s), där p(t) är ett pulståg."
+    },
+    "27": {
+        "q": "Beskriv hur en FFT kan användas för att skatta spektrum av en tidskontinuerlig signal",
+        "a": "FFT betyder Fast Fourier Transform. Den är mycket snabbare att använda för att utvärdera formler för DFT och IDFT."
+    },
+    "28": {
+        "q": "Vad innebär att en signal är slumpmässig?",
+        "a": "När man pratar om en slumpmässig signal menar man brus, ofta s.k. vitt brus. Egentligen finns ingen slumpmässig signal utan den är av en mer matematisk användning."
+    },
+    "29": {
+        "q": "Vad är en vit slumpmässig signal?",
+        "a": "Det är en signal man endast kan observera genom att låta den gå genom ett filter."
+    },
+    "30": {
+        "q": "Vad är brus?",
+        "a": "Med brus menas oönskade, slumpmässiga komponenter i signalen som studeras."
+    },
+    "31": {
+        "q": "Beskriv termiskt brus, var/när uppkommer det och varför?",
+        "a": "Termiskt brus har sitt ursprung från slumpmässiga rörelser av elektroner i elektriska kretsar. När elektroner byter elektronnivå. Termiskt brus kan modeleras som vitt brus för frekvenser upp till 1 THz."
+    },
+    "33": {
+        "q": "Vad innebär det att brus är Gaussiskt? Varför är detta ofta en bra och vanlig modell?",
+        "a": "Bruset w(t) antas ofta ha en Gaussisk distribution. Varför detta är vanligt är för att brus ofta är superpositioner av flera oberoende komponenter vilket gör att \"central limit theorem\" gäller. En annan anledning är att Gaussisk distribution är enkelt att hantera matematiskt."
+    },
+    "34": {
+        "q": "Definiera signal-till-brus-förhållande (SNR) i en signal. Vad är betydelsen av SNR?",
+        "a": "SNR är kvoten mellan signalenergin hos x(t) och w(t) (bruset). Det anges ofta i dB-skala. Det definierar förhållandet mellan signalleffekten och den bruseffekt som förvanskar signalen."
+    },
+    "35": {
+        "q": "Beskriv en tumrelgel för SNR i en likformigt kvantiserad signal",
+        "a": "För varje extra bit i kvantiseringen ökar SNR med ~6 dB."
+    },
+    "36": {
+        "q": "Beskriv en enkel modell för tidsfördjninings-skattnings-problemet",
+        "a": "Den mottagna signalen y = en skalning av x med fördröjning tau plus ett brus w."
+    },
+    "37": {
+        "q": "Beskriv hur skattning av tidsfördröjningar med hjälp av korrelation fungerar",
+        "a": "Genom att beräkna z(tau) = integralen av x(t) * y(t + tau) från - till + oändligheten fås en graf med olika toppar. Det tau som ligger vid den högsta toppen är tidsfördröjningen."
+    },
+    "38": {
+        "q": "Vad är en mångtydighetsfunktion? Hur är den definierad? Varför är den relevant för skattningar av tidsfördröjningar?",
+        "a": "Mångtydighetsfunktionen är korrelationen mellan x och sig själv. Den kan användas för att bestämma tidsfördröjningar och ekon. "
+    },
+    "39": {
+        "q": "Vilka egenskaper har en signal som är väl lämpad till skattningar av tidsfördröjningar, och varför?",
+        "a": "En symmetrisk signal som är jämnt fördelad med sitt max i origo. Dess mångtydighetsfunktion får svaga s.k. \"spöktoppar\" som kan göra tidsuppskattningen dålig."
+    },
+    "40": {
+        "q": "Ge två exempel på signaler som typiskt används för att skatta tidsfördröjningar",
+        "a": "Slumpmässigt vitt brus.\nChirp-vågform."
+    },
+    "41": {
+        "q": "Beskriv två tillämpningar av tidsfördröjnings-skattningar",
+        "a": "Radar, GPS, Ubåtar. "
+    },
+    "42": {
+        "q": "Vad är en spöktopp och varför uppkommer en sådan?",
+        "a": "Spöktoppar är signifikanta toppar som inte ligger kring tau = 0. Dessa är ej önskvärda och uppkommer när vågformer skapas genom att periodiskt upprepa en given moder-puls. "
+    },
+    "43": {
+        "q": "Vad är relationen mellan noggrannhet i skattningar av tidsfördröjningar och bandbredden på signalen som används? Var ur kommer denna relation?",
+        "a": "Bredden hos toppen av mångtydighetsfunktionen är relaterad till bandbredden ockuperad av den. En enkel uppskattning är att noggrannheten är inverst proportionell mot bandbredden hos x(t)."
+    },
+    "44": {
+        "q": "Vad är en chirp-vågform? Vad har den för egenskaper?",
+        "a": "Det är en sinusformad vågform där frekvensen ökar med tiden. Enveloppen är konstant i en chirp-vågform och endast fasen varierar. Den används bland annat till radar."
+    },
+    "45": {
+        "q": "Vad innebär det att en vågform har konstant envelopp? Är detta önskvärt eller inte, och isåfall varför (eller varför inte)?",
+        "a": "Att en vågform har konstant envelopp underlättar kraven på signalförstärkare som då får låga krav på linjäritet och låga krav på hög in/ut-verkningsgrad. Därför vill man att enveloppen inte ska variera utan vara konstant."
+    },
+    "46": {
+        "q": "Vad är entropi?",
+        "a": "Entropi är det förväntade värdet av informationen i varje meddelande som mottas. Meddelande står för en händelse eller de karaktäristiska dragen från en distribution eller dataström. Entropi karaktäriserar alltså vår osäkerhet om informationskällan, vilken ökar för fler slumpmässiga källor. Källan kännetecknas också av sannolikhetsfördelningen av proverna som dras."
+    },
+    "47": {
+        "q": "Vad är en binär källa? Hur stor och hur liten entropi kan en binär källa ha och varför?",
+        "a": "En binär källa generar och skickar ut bitar. Entropin hos en binär källa ligger mellan 0 och 1."
+    },
+    "48": {
+        "q": "Vad har en binär källa att göra med att singla slant?",
+        "a": "En binär källa genererar en bit, d.v.s. en 1:a eller en 0:a vilken kan jämföras med \"krona\" eller \"klave\". En binär källa har två utfall precis som att singla en slant."
+    },
+    "49": {
+        "q": "Om ett mynt med p = 0.1 kastas 100 gånger, vad kan vi förvänta oss att se?",
+        "a": "I det typiska fallet, p * 100 stycken av den ena sidan och resten av den andra. Alltså 10 stycken av den ena sidan och 90 stycken av den andra."
+    },
+    "50": {
+        "q": "Vad är en typisk sträng?",
+        "a": "Om sannolikheten för att strängen ska innehålla en 1:a är p innehåller en typisk sträng pN 1:or, där N är strängens längd."
+    },
+    "51": {
+        "q": "Definiera den binära entropifunktionen. Vad är den operativa betydelsen av denna funktion?",
+        "a": "Definitionen är att H(p) = -p * log_2(p) - (1-p) * log_2(1-p)\nDen visar vad entropin är för en binär signal."
+    },
+    "52": {
+        "q": "Varför är entropi ett mått på komprimerbarhet?",
+        "a": "Shannon-entropi ger en absolut gräns för bästa möjliga genomsnittliga längd på förlustfri kodning eller komprimering."
+    },
+    "53": {
+        "q": "Varför är entropi ett mått på informationsinnehåll?",
+        "a": "Entropi är ett mått på oförutsägbarhet av informationsinnehåll. Ett sätt att mäta hur pass \"random\" informationen är."
+    },
+    "54": {
+        "q": "Vad är entropin för en M-värd källa? Hur relaterar en sådan källa till ett tärningskast?",
+        "a": "Entropin är summan av alla M hos källan, där man tar - log_2(p_m) * p_m för varje m. En sex-sidig tärning har sex stycken M."
+    },
+    "55": {
+        "q": "Beskriv hur skulängdskodning fungerar. När förväntas sådan kodning fungera bra?",
+        "a": "Den beskriver hur många upprepade tecken som förekommer i följd hos en sträng. Den fungerar bra när en sträng ofta har upprepade tecken i följd."
+    },
+    "56": {
+        "q": "Beskriv hur Huffman-kodning fungerar",
+        "a": "Man bygger upp ett träd där tecken som förkommer sällan hamnar högt upp i grenar medan tecken som förkommer ofta hamnar längre ner mot roten. Sedan skapas en kod för varje tecken och ju närmre tecknet är trädets rot desta kortare kod kommer det få. På det sättet får tecken som förkommer ofta en kort kod medan tecken som förekommer sällan får en lång kod."
+    },
+    "57": {
+        "q": "Vad kan man säga om relationen mellan längden på kodorden i en Huffman-kod och entropin hos källan som ska komprimeras?",
+        "a": "I en Huffman-kod är den förväntade kodordslängden summan av alla tecknens längd * deras sannolikhet att de påträffas. Den teoretiska gränsen som ges av entropin hos samma källa är summan av alla tecknens sannolikhet att de påträffas * log_2(samma sannolikhet)."
+    },
+    "58": {
+        "q": "Vad är förlustfri komprimering? Ge ett exempel",
+        "a": "Det är kompringing där ingen data går förlorad. Ett exempel är Huffman-kodning."
+    },
+    "59": {
+        "q": "Vad är ej förlustfri komprimering? Ge ett exempel",
+        "a": "Kompringering där data går förlorad. T.ex. foto- och bildkompringering i JPG."
+    },
+    "60": {
+        "q": "Nämn två tillämpningar av källkodning",
+        "a": "Packning av filer och komprimering av bilder."
+    },
+    "61": {
+        "q": "Formulera källkodningssatsen för förlustfri kompringen och en M-värd källa",
+        "a": "Givet delta > 0 och epsilon > 0 så existerar det ett värde N så att sannolikheten att observera en sträng av längden N, som inte kan beskrivas med N(H_2(p) + epsilon), är mindre än delta."
+    },
+    "62": {
+        "q": "Vad innebär det att en datamängd innehåller redundans? Ge exempel på redundans i skriven text på svenska",
+        "a": "Det innebär att det skulle kunna gå att skicka samma information med mindre bitar. T.ex. kan man i svenskan skriva \"Hejsan\" vilken är tre tecken mer än \"Hej\" men betyder precis samma sak."
+    },
+    "63": {
+        "q": "Varför är det typiskt önskvärt att ta bort redundans med hjälp av datakompression?",
+        "a": "För att data med redundans innehåller onödig information som tar plats. Genom att ta bort redundans kan datafiler minskas i storlek."
+    },
+    "64": {
+        "q": "Varför är det typiskt önskvärt att tillsätta redundans med hjälp av kanalkodning?",
+        "a": "Högre redundas medför större minsta distans mellan kodord vilket i sin tur medför mindre felsannolikhet och fler fel som kan rättas."
+    },
+    "65": {
+        "q": "Om ett meddelande redan innehåller redundans, varför är det då meningsfullt att först ta bort denna redundans med hjälp av datakompression för att sen tillsätta annan redundans med hjälp av kanalkodning?",
+        "a": "För att redundansen i meddelandet kan vara väldigt slumpmässigt utbrett vilket skulle kunna resultera i en väldigt liten distans mellan kodorden. Redundansen som tillsätts m.h.a. kanalkodning kan anpassas för att ge en så stor distans som möjligt."
+    },
+    "66": {
+        "q": "Vad är en binär kanal?",
+        "a": "En binär kanal är en kanal som tar en binär siffra som insignal och ger en binär siffra som utsignal."
+    },
+    "67": {
+        "q": "Vad är en binärsymmetrisk kanal? Vad har en sådan kanal för kapacitet?",
+        "a": "En binärsymmetrisk kanal är en binär kanal där det är samma sannolikhet för en skickad 0:a att mottas som en 0:a som det är för en skickad 1:a att mottas som en 1:a. Kapaciteten för en binärsymmetrisk kanal är 1 - H_2(p) där H_2(p) är den binära entropin."
+    },
+    "68": {
+        "q": "Vad är en suddkanal? Vad har en sådan kanal för kapacitet?",
+        "a": "När en bit skickas i en suddkanal får mottagaren antingen själva biten och vet då att den är korrekt, eller så får den ett meddelande om att biten inte mottogs. Kapaciteten är 1 - sannolikheten för att biten inte kommer fram korrekt."
+    },
+    "69": {
+        "q": "Vad är en kodbok (för kanalkodning)? Definiera dess takt och minsta avstånd. Beskriv hur takten relaterar till antal kodord och kodordens längd.",
+        "a": "Takten är log_2(antal kodord i kodboken) / kodordens längd. Takten har enheten \"bits per channel use\"."
+    },
+    "70": {
+        "q": "Vad är en avkodare? Vad arbetar avkodaren efter för princip?",
+        "a": "Avkodaren sitter hos mottagaren och används för att uppskatta vilket meddelande som sändes. Den gör en bästa gissning av vad som skickades då fel kan ha uppstått på vägen."
+    },
+    "71": {
+        "q": "Vad är felsannolikhet?",
+        "a": "Sannolikheten att mottagaren ska ta emot data som inte stämmer med vad sändaren har skickat."
+    },
+    "72": {
+        "q": "Om en kodbok har min-avståndet d, hur många fel (antal felaktigt mottagna binära siffror) kan denna rätta och varför?",
+        "a": "Antalet fel som kan rättas är (d - 1) / 2 avrundat nedåt."
+    },
+    "73": {
+        "q": "Vad är repetitionskodning? Vad har en repetitionskod för takt? Vad har den för min-avstånd? Är en repetitionskod bra eller dålig?",
+        "a": "Repetitionskodning skickar samma data V gånger. Den har takten 1 / V och min-avståndet V. Repetitionskodning är dålig då det krävs en väldigt långsam takt för att felsannolikheten ska bli tillräckligt liten och användbar."
+    },
+    "74": {
+        "q": "Vad är en (7,4)-Hammingkod? Vad har den för takt?",
+        "a": "Det är en felrättande kod som använder paritetskontroll. Den har takten R = 4 / 7. Min-avståndet är 3."
+    },
+    "75": {
+        "q": "Vad är ömsesidig information?",
+        "a": "Ett mått på hur mycket två stokastiska variabler beror på varandra. Ömsesidig information mäts i enheten bit."
+    },
+    "76": {
+        "q": "Var är kanalkapacitet?",
+        "a": "Kanalkapacitet är den maximala hastighet med vilken information kan överföras via en kanal utan fel, mätt i bitar per sekund."
+    },
+    "77": {
+        "q": "Formulera kanalkodningssatsen för en binär-symmetrisk kanal",
+        "a": "För en kanal med delta > 0 och gamma > 0 finns en kodordslängd N och kodbok med kodord av längd N som har takten R = C - delta och som gör det möjligt att kommunicera med en felsannolikhet P_e < gamma."
+    },
+    "78": {
+        "q": "Nämn någon klass av kanalkoder som används i praktiken och ungefär när den är utvecklad/uppfunnen",
+        "a": "Fram till 1940 trodde man att enda sättet att övervinna kanalfel var att använda takrepetitionskodning som är extremt ineffektiv i kontrast till kanalkodningssatsen som säger att slumpmässiga fel kan undvikas med kodning och att kommunikation i takter upp till kapaciteten C är möjliga utan fel. Detta gav en hint om att slumpmässigt valda kodböcker är bra. Under 1900-talet lades mycket arbete på att hitta bra, strukturerade kodböcker. Mycket av detta arbete drevs av rymdforskningen då de ville kunna kommunicera med rymdfarkoster. Senare drevs arbete mycket av den nykommande kommersiella telefonkommunikationen som mobiltelefoni och mobilt bredband."
+    },
+    "79": {
+        "q": "Vad är en diskret minneslös kanal?",
+        "a": "Det är en utvidgning av en binär kanal för input och output av alfabetet med storlek > 2."
+    },
+    "80": {
+        "q": "Vad är en additivt-Gaussiskt-brus-kanal?",
+        "a": "Det är ett specialfall av kontinuerlig-input-kontinuerlig-output-minneslös-kanal. y = x + w. Vitt gaussiskt brus adderas till den signal som överförs på kanalen. Vitt gaussiskt brus har en konstant spektraltäthet N_0 / 2 och dess amplitud är normalfördelad. "
+    },
+    "81": {
+        "q": "Vad är en vågformskanal?",
+        "a": "Den tar en inkommande vågform x(t) och levererar en utgående vågform y(t). Generellt kan man säga att y(t) = x(t)h(t) + w(t), där h(t) är ett filter och w(t) är brus."
+    },
+    "82": {
+        "q": "Vad är en LTI-vågformskanal?",
+        "a": "Det är en vågformskanal med ett filter h(t) som är linjärt och tidsinvariant (LTI)."
+    },
+    "83": {
+        "q": "Vad är koherenstid för en vågformskanal?",
+        "a": "Koherenstiden anger hur länge ett olinjärt system kan approximeras som ett LTI-system."
+    },
+    "84": {
+        "q": "Vad är koherensbandbredd för en vågformskanal? Under vilka förutsättningar är denna definierad?",
+        "a": "Den bandbredd hos ett filter H(f) som är väsentligen konstant."
+    },
+    "85": {
+        "q": "Vad är \"delay spread\" för en kanal? Under vilka förutsättningar är denna definierad? Hur relaterar det till koherensbandbredden?",
+        "a": "Den effektiva varaktigheten av kanalimpulssvaret h(t) betecknas med T_d och kallas \"delay spread\" för kanalen. Då B_c är bandbredden för vilket H(f) är väsentligen konstant har vi att B_c = 1 / T_d."
+    },
+    "86": {
+        "q": "Vad är ett koherensintervall?",
+        "a": "Ett tidsfrekvensutrymme med varaktigheten T_c och bandbredd B_c. Om den skickade vågformen x(t) med bandbredd B och tidsintervall T får plats i ett koherensintervall så att T < T_c och B < B_c är den enda effekten hos x(t) amplitudskalning. "
+    },
+    "87": {
+        "q": "Vad är en frekvens-flat kanal?",
+        "a": "Om kanalens bandbredd är mindre än koherensbandbredden är kanalen frekvens-flat. Då kommer H(f) inte variera märkbart beroende på f över bandet."
+    },
+    "88": {
+        "q": "Vad är en frekvens-selektiv kanal?",
+        "a": "Då kanalens bandbredd är större än koherensbandbredden är kanalen frekvens-selektiv. Då varierar impulssvaret med f inom bandet."
+    },
+    "89": {
+        "q": "Vad innebär att arbetspunkten för en vågformskanal är i det bandbredds-begränsade området?",
+        "a": "För en vågformskanal i ett bandbreddsbegränsat området ökar kapaciteten logaritmiskt när skickningseffekten ökar."
+    },
+    "90": {
+        "q": "Vad innebär att arbetspunkten för en vågformskanal är i det effekt-begränsade området?",
+        "a": "Då ökar kanalens kapacitet linjärt med avseende på skickningseffekten."
+    },
+    "92": {
+        "q": "Vad är karaktäristisk impedans hos en kabel? Vilka parametrar beror den på?",
+        "a": "Den karaktäristiska impedansen hos en kabel är förhållandet mellan amplituder för spänning och ström när en våg fortplantar sig längs kabeln. Vågen färdas i ena riktningen och dess reflektioner i den andra. Impedansen bestäms av förhållandet mellan mittledardiameter och skärmdiameter. Om en signal skickas genom en kabel kommer signalen förvrängas om inte impedansen matchas korrekt mot den karaktäristiska impedansen för kabeln."
+    },
+    "93": {
+        "q": "Vad innebär det att en kabel är inkopplad till en anpassad last?",
+        "a": "Att lastens impedans är lika stor som kabelns karaktäristiska impedans."
+    },
+    "94": {
+        "q": "Under vilka förutsättningar blir frekvenssvaret H(f) för en kabel med någon last-impedans konstant med avseende på f?",
+        "a": "När last-impedansen är matchad."
+    },
+    "95": {
+        "q": "Vad händer om en kabel belastas med en missanpassad last?",
+        "a": "Kabelns impulssvar kommer inte att kunna förenklas till en enkel form. Det kommer gå mot 0 exponentiellt när kabelns längd ökar. Detta för att kabeln fungerar som ett frekvens-selektivt filter och ger inte bara effekten av en tidsfördröjning och dämpning."
+    },
+    "96": {
+        "q": "Hur snabbt kan en signal propagera över en kabel?",
+        "a": "Signalhastigheten i typiska kablar är 66% av ljusets hastighet."
+    },
+    "97": {
+        "q": "Beskriv tre huvudsakliga fenomen som spelar in när en radiosignal breder ut sig över en trådlös kanal",
+        "a": "Reflektion, superposition, diffraktion."
+    },
+    "98": {
+        "q": "Vad är sträckdämpning? Varför uppkommer denna?",
+        "a": "Minskning av effekttäthet av en elektromagnetisk våg som utbreder sig genom rymden. Det uppstår när signalen passerar genom media som inte är transparenta för elektromagnetiska vågor. "
+    },
+    "99": {
+        "q": "Vad är storskalig fädning/skuggfädning? Varför uppkommer denna?",
+        "a": "Signalen blir skuggad av stora objekt som t.ex. byggnader och bilar. Dämpningen varierar märkbart när sändare eller mottagare förflyttas över tio eller hundra meter. Den är typiskt modulerad som en skalning av mottagen signal med en faktor roten ur 10^(x/10). I dB-skala blir faktorn bara x."
+    },
+    "100": {
+        "q": "Vad är småskalig fädning? Varför uppkommer denna?",
+        "a": "När vågkomponenterna som förökats via olika vägar interfererar konstruktivt eller destruktivt på mottagaren uppstår småskalig fädning. Det uppstår vid förändringar i miljön, exempelvis att mottagare eller sändare rör på sig."
+    },
+    "101": {
+        "q": "Relatera, kvantitativt, koherenstiden för en trådlös kanal till hastigheten hos en rörlig sändare eller mottagare",
+        "a": "Koherenstiden är signalens våglängd delat på sändarens eller mottagarens hastighet."
+    },
+    "102": {
+        "q": "Relatera, kvantitativt, koherensbandbredden för en trådlös kanal till hur utbredningsmiljön ser ut",
+        "a": "Koherensbandbredden är ungefär inverst proportionell mot den största signalfördröjningen."
+    },
+    "104": {
+        "q": "Vad är Rayleigh-fädning? Varför uppkommer denna och när är den en relevant modell?",
+        "a": "Det är en statistisk modell för effekten hos en utbredningsmiljö på en radiosignal, såsom den används av trådlösa enheter. Rayleigh-fädning ses som en rimlig modell för troposfärisk och jonosfärisk signalutbredning samt för effekten av kraftigt bebyggda stadsmiljör på radiosignaler. Rayleigh-fädning är mest tillämplig när det inte finns någon dominerande utbredning längs en linje mellan sändaren och mottagaren."
+    },
+    "105": {
+        "q": "Vad är \"single sideband\" AM?",
+        "a": "Tanken bakom det är att bandpassfiltrera x(t) för att ta bort redundans i frekvensdomänen."
+    },
+    "106": {
+        "q": "Vad är \"double sideband\" AM?",
+        "a": "Information är duplicerad i frekvensdomänen och modulerad vågform innehåller redundans."
+    },
+    "107": {
+        "q": "Vad är analog frekvensmodulation? Beskriv hur det fungerar med en ekvation.",
+        "a": "x(t) = cos( 2πf_ct + beta * m(tau) ) där m(tau) blir integrerad från - oändligheten till t."
+    },
+    "108": {
+        "q": "Vad har en digital kommunikationslänk för fördelar över en analog? Vad har den för nackdelar?",
+        "a": "Positivt: Den kan utnyttja käll- och kanalkodningssatserna och ger bättre prestanda i termer av felsannolikhet och spektral-effektivitet. Den drar nytta av mikro-elektronikens enorma utveckling.\nNegativt: Mer avancerad teknik. Kräver både digital och analog hårdvara."
+    },
+    "109": {
+        "q": "Beskriv de olika rollerna hos en digital kommunikationslänk",
+        "a": "Länken består av en sändare, en kanal och en mottagare. Hos sändaren komprimeras, felskyddas och moduleras informationen. Informationen sänds sedan över kanalen till mottagaren. Hos mottagaren demoduleras och avkodas informationen och tillslut packas den upp."
+    },
+    "110": {
+        "q": "Vad är \"channel state information\" (CSI)? Hur kan sändare och mottagare få CSI och vad ha de för nytta av det?",
+        "a": "För att få en kommunikationslänk att fungera måste ibland sändaren och/eller mottagaren känna till hur impulssvaret för kanalen ser ut samt de statistiska egenskaperna hos bruset. När mottagaren och sändaren har denna information kan man säga att de har CSI. Hos mottagaren används denna information vid demodulation och för att kompensera för förvrängningar från kanalen. Hos sändaren används informationen bl.a. för att anpassa den skickade vågformen. I vanliga fall får mottagaren CSI genom att sändaren förstå skickar ut en pilot-vågform som mottagaren kan använda för att avgöra hur impulssvaret ser ut."
+    },
+    "111": {
+        "q": "Hur fungerar digital modulation? Vad är en symbol? Vad är linjär/olinjär modulation?",
+        "a": "Syftet med digital modulation är att kartlägga N binära siffror som erhålls efter kanalkodning.\nEn symbol är en sträng av N binära tecken som är uppdelade i delsträngar och sedan mappade i reella nummer s som kallas symboler.\nLinjär modulation eller puls-amplitud-modulation förenklar analysen och gör det relativt enkelt att återskapa symbolerna från signalren som mottogs från sändaren. Problemet med linjär modulation är att för smalbandiga signaler kommer den resulterande vågformen ha en tidsvarierande envelopp. Därför används istället fas-modulation som endast är meningsfull att använda för smalbandiga signaler."
+    },
+    "112": {
+        "q": "Vad innebär tids- och frekvenssynkronisering? Varför behövs dessa funktioner och hur fungerar de?",
+        "a": "Tidssynkronisering ser till att sändaren och mottagaren har gemensam tidsreferens. Detta är nödvändigt för att kunna sampla den mottagna signalen på rätt ställe. För att säkerställa att mottagaren och sändaren är synkade skickar sändaren med jämna mellanrum ut en synkroniseringsvågform med en bra mångtydighetsfunktion som mottagaren känner igen.\nFrekvenssynkronisering innebär att mottagaren kontrollerar att den använder samma bärfrekvens som sändaren använder. Detta är viktigt om vågformen x(t) är smalbandig, annars har bärfrekvensen ingen mening. Frekvenssynkronisering uppnås i praktiken genom att låta sändaren periodiskt skicka ut en referenssignal för frekvensen, typiskt en renodlad sinus med bärfrekvensen f_c."
+    }
+}
