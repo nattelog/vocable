@@ -1,4 +1,0 @@
-{
-  "q": "Definiera Fouriertransformen X[F] av en tidsdiskret signal x[n] samt dess invers",
-  "a": "X[F] = summan av x[n] * e^(-j2πFn) från - till + oändligheten.\nx[n] = integralen av X[F] * e^(j2πFn) från -0.5 till +0.5."
-}

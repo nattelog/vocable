@@ -1,4 +1,0 @@
-{
-  "q": "Vad är en additivt-Gaussiskt-brus-kanal?",
-  "a": "Det är ett specialfall av kontinuerlig-input-kontinuerlig-output-minneslös-kanal. y = x + w. Vitt gaussiskt brus adderas till den signal som överförs på kanalen. Vitt gaussiskt brus har en konstant spektraltäthet N_0 / 2 och dess amplitud är normalfördelad. "
-}

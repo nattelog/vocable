@@ -1,4 +1,0 @@
-{
-  "q": "Beskriv hur Huffman-kodning fungerar",
-  "a": "Man bygger upp ett träd där tecken som förkommer sällan hamnar högt upp i grenar medan tecken som förkommer ofta hamnar längre ner mot roten. Sedan skapas en kod för varje tecken och ju närmre tecknet är trädets rot desta kortare kod kommer det få. På det sättet får tecken som förkommer ofta en kort kod medan tecken som förekommer sällan får en lång kod."
-}

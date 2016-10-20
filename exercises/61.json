@@ -1,4 +1,0 @@
-{
-  "q": "Formulera källkodningssatsen för förlustfri kompringen och en M-värd källa",
-  "a": "Givet delta > 0 och epsilon > 0 så existerar det ett värde N så att sannolikheten att observera en sträng av längden N, som inte kan beskrivas med N(H_2(p) + epsilon), är mindre än delta."
-}

@@ -1,4 +1,0 @@
-{
-  "q": "Om ett meddelande redan innehåller redundans, varför är det då meningsfullt att först ta bort denna redundans med hjälp av datakompression för att sen tillsätta annan redundans med hjälp av kanalkodning?",
-  "a": "För att redundansen i meddelandet kan vara väldigt slumpmässigt utbrett vilket skulle kunna resultera i en väldigt liten distans mellan kodorden. Redundansen som tillsätts m.h.a. kanalkodning kan anpassas för att ge en så stor distans som möjligt."
-}

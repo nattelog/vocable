@@ -1,4 +1,0 @@
-{
-  "q": "Beskriv hur en FFT kan användas för att skatta spektrum av en tidskontinuerlig signal",
-  "a": "FFT betyder Fast Fourier Transform. Den är mycket snabbare att använda för att utvärdera formler för DFT och IDFT."
-}

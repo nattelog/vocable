@@ -1,4 +1,0 @@
-{
-  "q": "Nämn någon klass av kanalkoder som används i praktiken och ungefär när den är utvecklad/uppfunnen",
-  "a": "Fram till 1940 trodde man att enda sättet att övervinna kanalfel var att använda takrepetitionskodning som är extremt ineffektiv i kontrast till kanalkodningssatsen som säger att slumpmässiga fel kan undvikas med kodning och att kommunikation i takter upp till kapaciteten C är möjliga utan fel. Detta gav en hint om att slumpmässigt valda kodböcker är bra. Under 1900-talet lades mycket arbete på att hitta bra, strukturerade kodböcker. Mycket av detta arbete drevs av rymdforskningen då de ville kunna kommunicera med rymdfarkoster. Senare drevs arbete mycket av den nykommande kommersiella telefonkommunikationen som mobiltelefoni och mobilt bredband."
-}

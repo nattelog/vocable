@@ -1,4 +1,0 @@
-{
-  "q": "Vad är entropi?",
-  "a": "Entropi är det förväntade värdet av informationen i varje meddelande som mottas. Meddelande står för en händelse eller de karaktäristiska dragen från en distribution eller dataström. Entropi karaktäriserar alltså vår osäkerhet om informationskällan, vilken ökar för fler slumpmässiga källor. Källan kännetecknas också av sannolikhetsfördelningen av proverna som dras."
-}

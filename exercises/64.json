@@ -1,4 +1,0 @@
-{
-  "q": "Varför är det typiskt önskvärt att tillsätta redundans med hjälp av kanalkodning?",
-  "a": "Högre redundas medför större minsta distans mellan kodord vilket i sin tur medför mindre felsannolikhet och fler fel som kan rättas."
-}

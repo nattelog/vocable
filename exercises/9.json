@@ -1,4 +1,0 @@
-{
-  "q": "Vad är dimensionalitet? Vilken dimensionalitet har en signal som bor i [-T/2,T/2]x[-B,B] och varför?",
-  "a": "Värdet 2BT + 1 kallas dimensionalitet och är frihetsgraden av x(t) vilket är det minsta antal reellvärda koefficienter som behövs för att representera en signal som \"bor\" i [-T/2,T/2]x[-B,B]"
-}

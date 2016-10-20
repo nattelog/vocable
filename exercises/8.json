@@ -1,4 +1,0 @@
-{
-  "q": "Formulera samplingsteoremet och ge en formel för rekonstruktion",
-  "a": "Om x(t) är bandbegränsad och den är samplad med en frekvens >= 2B. Den kan då rekonstrueras med x(t) = summan x(nT) * p(t - nT) över n, där p = sinc(t / T)."
-}

@@ -1,4 +1,0 @@
-{
-  "q": "Vad händer om en kabel belastas med en missanpassad last?",
-  "a": "Kabelns impulssvar kommer inte att kunna förenklas till en enkel form. Det kommer gå mot 0 exponentiellt när kabelns längd ökar. Detta för att kabeln fungerar som ett frekvens-selektivt filter och ger inte bara effekten av en tidsfördröjning och dämpning."
-}

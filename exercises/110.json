@@ -1,4 +1,0 @@
-{
-  "q": "Vad är \"channel state information\" (CSI)? Hur kan sändare och mottagare få CSI och vad ha de för nytta av det?",
-  "a": "För att få en kommunikationslänk att fungera måste ibland sändaren och/eller mottagaren känna till hur impulssvaret för kanalen ser ut samt de statistiska egenskaperna hos bruset. När mottagaren och sändaren har denna information kan man säga att de har CSI. Hos mottagaren används denna information vid demodulation och för att kompensera för förvrängningar från kanalen. Hos sändaren används informationen bl.a. för att anpassa den skickade vågformen. I vanliga fall får mottagaren CSI genom att sändaren förstå skickar ut en pilot-vågform som mottagaren kan använda för att avgöra hur impulssvaret ser ut."
-}

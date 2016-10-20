@@ -1,4 +1,0 @@
-{
-  "q": "Vad är analog frekvensmodulation? Beskriv hur det fungerar med en ekvation.",
-  "a": "x(t) = cos( 2πf_ct + beta * m(tau) ) där m(tau) blir integrerad från - oändligheten till t."
-}

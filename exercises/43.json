@@ -1,4 +1,0 @@
-{
-  "q": "Vad är relationen mellan noggrannhet i skattningar av tidsfördröjningar och bandbredden på signalen som används? Var ur kommer denna relation?",
-  "a": "Bredden hos toppen av mångtydighetsfunktionen är relaterad till bandbredden ockuperad av den. En enkel uppskattning är att noggrannheten är inverst proportionell mot bandbredden hos x(t)."
-}

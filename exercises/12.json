@@ -1,4 +1,0 @@
-{
-  "q": "Beskriv hur I/Q-modulering/demodulering fungerar",
-  "a": "Genom att summera en signal x_I(t) * cos(2πf_ct) med en signal x_Q(t) * -sin(2πf_ct) fås en IQ-modulerad signal x(t). För att demodulera x(t) multiplcerar man x(t) med 2cos(2πf_ct) och lågpassfiltrar den. Då får man ut x_I(t). På liknande sätt genom att multiplicera x(t) med -2sin(2πf_ct) och lågpassfiltrera den får man ut x_Q(t)."
-}

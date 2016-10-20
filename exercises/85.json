@@ -1,4 +1,0 @@
-{
-  "q": "Vad är \"delay spread\" för en kanal? Under vilka förutsättningar är denna definierad? Hur relaterar det till koherensbandbredden?",
-  "a": "Den effektiva varaktigheten av kanalimpulssvaret h(t) betecknas med T_d och kallas \"delay spread\" för kanalen. Då B_c är bandbredden för vilket H(f) är väsentligen konstant har vi att B_c = 1 / T_d."
-}

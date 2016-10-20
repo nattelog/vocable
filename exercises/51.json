@@ -1,4 +1,0 @@
-{
-  "q": "Definiera den binära entropifunktionen. Vad är den operativa betydelsen av denna funktion?",
-  "a": "Definitionen är att H(p) = -p * log_2(p) - (1-p) * log_2(1-p)\nDen visar vad entropin är för en binär signal."
-}

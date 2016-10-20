@@ -1,4 +1,0 @@
-{
-  "q": "Hur fungerar direkt demodulation (nedblandning)?",
-  "a": "Genom att multiplcera 2x(t) med en cosinus och lågpassfiltrera den flyttar man ner signalen till f = 0."
-}

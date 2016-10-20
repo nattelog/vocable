@@ -1,4 +1,0 @@
-{
-  "q": "Vad är repetitionskodning? Vad har en repetitionskod för takt? Vad har den för min-avstånd? Är en repetitionskod bra eller dålig?",
-  "a": "Repetitionskodning skickar samma data V gånger. Den har takten 1 / V och min-avståndet V. Repetitionskodning är dålig då det krävs en väldigt långsam takt för att felsannolikheten ska bli tillräckligt liten och användbar."
-}

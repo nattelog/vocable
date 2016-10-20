@@ -1,4 +1,0 @@
-{
-  "q": "Vad är en (7,4)-Hammingkod? Vad har den för takt?",
-  "a": "Det är en felrättande kod som använder paritetskontroll. Den har takten R = 4 / 7. Min-avståndet är 3."
-}

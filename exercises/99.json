@@ -1,4 +1,0 @@
-{
-  "q": "Vad är storskalig fädning/skuggfädning? Varför uppkommer denna?",
-  "a": "Signalen blir skuggad av stora objekt som t.ex. byggnader och bilar. Dämpningen varierar märkbart när sändare eller mottagare förflyttas över tio eller hundra meter. Den är typiskt modulerad som en skalning av mottagen signal med en faktor roten ur 10^(x/10). I dB-skala blir faktorn bara x."
-}

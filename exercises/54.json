@@ -1,4 +1,0 @@
-{
-  "q": "Vad är entropin för en M-värd källa? Hur relaterar en sådan källa till ett tärningskast?",
-  "a": "Entropin är summan av alla M hos källan, där man tar - log_2(p_m) * p_m för varje m. En sex-sidig tärning har sex stycken M."
-}

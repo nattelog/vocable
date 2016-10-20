@@ -1,4 +1,0 @@
-{
-  "q": "Varför är det typiskt önskvärt att ta bort redundans med hjälp av datakompression?",
-  "a": "För att data med redundans innehåller onödig information som tar plats. Genom att ta bort redundans kan datafiler minskas i storlek."
-}

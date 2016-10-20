@@ -1,4 +1,0 @@
-{
-  "q": "Formulera kanalkodningssatsen för en binär-symmetrisk kanal",
-  "a": "För en kanal med delta > 0 och gamma > 0 finns en kodordslängd N och kodbok med kodord av längd N som har takten R = C - delta och som gör det möjligt att kommunicera med en felsannolikhet P_e < gamma."
-}

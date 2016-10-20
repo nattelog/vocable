@@ -1,4 +1,0 @@
-{
-  "q": "Vad innebär tids- och frekvenssynkronisering? Varför behövs dessa funktioner och hur fungerar de?",
-  "a": "Tidssynkronisering ser till att sändaren och mottagaren har gemensam tidsreferens. Detta är nödvändigt för att kunna sampla den mottagna signalen på rätt ställe. För att säkerställa att mottagaren och sändaren är synkade skickar sändaren med jämna mellanrum ut en synkroniseringsvågform med en bra mångtydighetsfunktion som mottagaren känner igen.\nFrekvenssynkronisering innebär att mottagaren kontrollerar att den använder samma bärfrekvens som sändaren använder. Detta är viktigt om vågformen x(t) är smalbandig, annars har bärfrekvensen ingen mening. Frekvenssynkronisering uppnås i praktiken genom att låta sändaren periodiskt skicka ut en referenssignal för frekvensen, typiskt en renodlad sinus med bärfrekvensen f_c."
-}

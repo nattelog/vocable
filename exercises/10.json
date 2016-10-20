@@ -1,4 +1,0 @@
-{
-  "q": "Vad är skillnaden mellan en lågpass - (basband) och en smalbandig (passband/bandpass) signal?",
-  "a": "En lågpass-signal har s+in energi koncentrerad kring ett frekvensband runt frekvensen f = 0. En smalbandig signal är nollskild endast i ett band med sin bärfrekvens i mitten."
-}

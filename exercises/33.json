@@ -1,4 +1,0 @@
-{
-  "q": "Vad innebär det att brus är Gaussiskt? Varför är detta ofta en bra och vanlig modell?",
-  "a": "Bruset w(t) antas ofta ha en Gaussisk distribution. Varför detta är vanligt är för att brus ofta är superpositioner av flera oberoende komponenter vilket gör att \"central limit theorem\" gäller. En annan anledning är att Gaussisk distribution är enkelt att hantera matematiskt."
-}

@@ -4,7 +4,8 @@
   "description": "Vocable exercise tool",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify js/ui.js -o build/client.js",
+    "dev": "nodemon --ignore build/ --exec npm run build"
   },
   "repository": {
     "type": "git",
