@@ -357,7 +357,51 @@ module.exports={ '1':
       exercise.element.style.backgroundColor = '#337ab7';
     });
 
+    clearStorage();
     showExercises();
+  }
+
+  function setExercisesFromStorage() {
+    if (typeof localStorage !== 'undefined') {
+      var storedExercises = JSON.parse(localStorage.getItem('exercises')) || {};
+      var keys = Object.keys(storedExercises);
+
+      keys.forEach(function(id) {
+        var passed = storedExercises[id];
+
+        if (passed) {
+          passExercise(id);
+        }
+        else {
+          failExercise(id);
+        }
+      });
+
+    }
+  }
+
+  function clearStorage() {
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem('exercises');
+    }
+  }
+
+  function setExerciseInStorage(id, value) {
+    if (typeof localStorage !== 'undefined') {
+      var storedExercises = JSON.parse(localStorage.getItem('exercises')) || {};
+
+      storedExercises[id] = value;
+
+      localStorage.setItem('exercises', JSON.stringify(storedExercises));
+    }
+  }
+
+  function passExerciseInStorage(id) {
+    setExerciseInStorage(id, true);
+  }
+
+  function failExerciseInStorage(id) {
+    setExerciseInStorage(id, false);
   }
 
   function passExercise(id) {
@@ -367,6 +411,7 @@ module.exports={ '1':
       return console.error('exercise ' + id + ' does not exist');
     }
 
+    passExerciseInStorage(id);
     exercise.failed = false;
     exercise.passed = true;
     exercise.element.style.backgroundColor = '#5cb85c';
@@ -380,6 +425,7 @@ module.exports={ '1':
       return console.error('exercise ' + id + ' does not exist');
     }
 
+    failExerciseInStorage(id);
     exercise.failed = true;
     exercise.passed = false;
     exercise.element.style.backgroundColor = '#d9534f';
@@ -606,6 +652,7 @@ module.exports={ '1':
     exercisesPage.style.display = 'none';
 
     populateTable();
+    setExercisesFromStorage();
     showExercises();
 
     answer.addEventListener('click', function() {
