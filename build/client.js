@@ -2,13 +2,13 @@
 module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '2': { q: 'cancer ', a: 'samlingsnamn för elakartade tumörer' },
   '3': { q: 'hemoglobin ', a: 'blodfärgämne' },
-  '4': 
+  '4':
    { q: 'lesion ',
      a: 'skada/sjuklig förändring i vävnad eller organ' },
   '5': { q: 'gangrän ', a: 'celldöd, kallbrand' },
   '6': { q: 'gangrenös ', a: 'kallbrandsliknande' },
   '7': { q: 'artär ', a: 'pulsådern, blodkärl med syresatt blod' },
-  '8': 
+  '8':
    { q: 'arterioskleros ',
      a: 'samlingsnamn för typer av artärförkalkning' },
   '9': { q: 'uretär ', a: 'urinledare' },
@@ -33,7 +33,7 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '28': { q: 'cysta ', a: 'sjukligt hålrum' },
   '29': { q: 'likvor ', a: 'vätska' },
   '30': { q: 'aspiration ', a: 'inandning av munhåleinnehåll' },
-  '31': 
+  '31':
    { q: 'falang ',
      a: 'kort rörformat ben, utskott på fingrar och tår' },
   '32': { q: 'varicer ', a: 'åderbråck' },
@@ -42,7 +42,7 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '35': { q: 'skolios ', a: 'ryggradskrökning i sidled' },
   '36': { q: 'kranium ', a: 'skalle' },
   '37': { q: 'kolon ', a: 'tjocktarm' },
-  '38': 
+  '38':
    { q: 'klamydia ',
      a: 'könssjukdom, sexuell överförd infektion ' },
   '39': { q: 'insufficiens ', a: 'otillräcklig funktion' },
@@ -53,7 +53,7 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '44': { q: 'cele ', a: 'bråck' },
   '45': { q: 'ectasia ', a: 'utvidgning ' },
   '46': { q: 'genesis ', a: 'en sjukdoms uppkomst och utveckling ' },
-  '47': 
+  '47':
    { q: 'graphia ',
      a: 'registrering med kurva eller bild, oftast röntgen ' },
   '48': { q: 'iatria ', a: 'läkekonst ' },
@@ -69,37 +69,37 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '58': { q: 'rhexia ', a: 'bristning ' },
   '59': { q: 'scpoia ', a: 'betraktande ' },
   '60': { q: 'stomia ', a: 'operativ förberedelse eller öppning' },
-  '61': 
+  '61':
    { q: 'Vad är ICD?',
      a: 'En internationell sjukdomsklassifikation som används för dödsorsaksstatistik och redovisning av diagnoser hos sjukvårdade patienter. Det är främst en statistisk klassifikation.' },
-  '62': 
+  '62':
    { q: 'Vad betyder förkortningen ICD? ',
      a: 'International List of Causes of Deaths' },
-  '63': 
+  '63':
    { q: 'Vad är främsta syftet med ICD? ',
      a: 'De ska på ett meningsfullt sätt gruppera sjukdomar och dödsorsaker för översiktliga statistiska sammanställningar och analyser.' },
-  '64': 
+  '64':
    { q: 'Vilken stor förändring gjordes i Sverige 1987 gällande ICD?',
      a: 'Då genomfördes en stavningsreform i den svenska klassifikationen med moderniserad stavning av de försvenskade latinska benämningarna men med bibehållen klassisk stavning i de rent latinska diagnoserna.' },
-  '65': 
+  '65':
    { q: 'Vad är DSM? ',
      a: 'Det är ett klassifikationssystem inom psykiatrin som är utarbetat av den nordamerikanska psykiaterorganistationen. Man använder tydliga diagnistiska kriterier och deras klassificering kan ske efter flera dimensioner (axlar)' },
-  '66': 
+  '66':
    { q: 'Vad betyder förkortningen DSM? ',
      a: 'Diagnostic and Statistical Manual of Mental Disorders' },
-  '67': 
+  '67':
    { q: 'Vad betyder förkortningen KVÅ? ',
-     a: 'Det är en gemensam klassifikation för olika verksamhetsområden och yrkeskategorier inom hälso- och sjukvården och innefattar operationsklassifikationer.' },
-  '68': 
+     a: 'Klassifikationer av vårdåtgärder.' },
+  '68':
    { q: 'Vad betyder förkortningen ATC?',
      a: 'Anatomical Therapeutic Chemical' },
-  '69': 
+  '69':
    { q: 'Vad är en ATC-kod? ',
      a: 'Klassifikationssystem för läkemeddel, koder för läkemedel' },
-  '70': 
+  '70':
    { q: 'Vad betyder förkortningen DRG? ',
      a: 'Diagnosis Related Groups' },
-  '71': 
+  '71':
    { q: 'Vad är syftet med DRG?',
      a: 'De arbetar för att sammanfattande beskriva sjukhusens verksamhet både från medicinsk synpunkt (diagnoser och operationer) och med avseende på resursförbrukningen.' },
   '72': { q: 'acutus ', a: 'akut' },
@@ -279,7 +279,7 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '246': { q: 'oculus ', a: 'öga' },
   '247': { q: 'thalamus ', a: 'kärnsystemet i hjärnan' },
   '248': { q: 'uterus ', a: 'livmoder' },
-  '249': 
+  '249':
    { q: 'ventriculus ',
      a: 'magsäck; hjärtkammare; hjärtventrikel' },
   '250': { q: 'anulus ', a: '(liten) ring' },
@@ -339,7 +339,7 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '304': { q: 'vitium ', a: 'defekt' },
   '305': { q: 'colon ', a: 'tjocktarm' },
   '306': { q: 'encephalon ', a: 'hjärna' },
-  '307': 
+  '307':
    { q: 'ganglion ',
      a: 'nervknuta, senknuta, ansvällning på ledkapseln' },
   '308': { q: 'olecranon ', a: 'armbågsutskott' },
@@ -438,7 +438,7 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '401': { q: 'farmaceut ', a: 'apotekare' },
   '402': { q: 'analgetika ', a: 'smärtstillande medel' },
   '403': { q: 'anestetika ', a: 'bedövningsmedel' },
-  '404': 
+  '404':
    { q: 'antiarytmika ',
      a: 'medel mot rubbningar i hjärtats rytm' },
   '405': { q: 'antibiotika ', a: 'medel mot ”bakteriernas liv”' },
@@ -449,30 +449,30 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '410': { q: 'antikoagulantia ', a: 'medel mot koagulation' },
   '411': { q: 'antipsykotika ', a: 'medel mot psykos' },
   '412': { q: 'antipyretika ', a: 'febernedsättande medel' },
-  '413': 
+  '413':
    { q: 'antiseptika ',
      a: 'bakteriedödande medel, medel mot (sår)infektion' },
-  '414': 
+  '414':
    { q: 'cytostatika ',
      a: 'cellhämmande medel som hindrar celldelning, cellgifter' },
   '415': { q: 'diuretika ', a: 'urindrivande medel' },
   '416': { q: 'hypnotika ', a: 'sömnmedel' },
   '417': { q: 'laxantia ', a: 'avföringsmedel' },
-  '418': 
+  '418':
    { q: 'narkotika ',
      a: 'bedövande och centralstimulerande medel' },
   '419': { q: 'sedativa ', a: 'lugnande medel' },
   '420': { q: 'adjuvans ', a: 'hjälpande' },
   '421': { q: 'anorexi ', a: 'aptitlöshet' },
   '422': { q: 'clearance ', a: 'rening' },
-  '423': 
+  '423':
    { q: 'complience ',
      a: 'medgörlighet (patientens följsamhet till läkarens ordination)' },
   '424': { q: 'depressiv ', a: 'nedtryckande, hämmande' },
   '425': { q: 'digitalisering ', a: 'hjärtbehandling' },
   '426': { q: 'funktionell ', a: 'utan påvisad fysiologisk orsak' },
   '427': { q: 'generisk ', a: 'namnet på läkemedlets aktiva substans' },
-  '428': 
+  '428':
    { q: 'generikum ',
      a: 'en typ av kopia av ett redan inregistrerat varumärke' },
   '429': { q: 'initial ', a: 'begynnelse- ' },
@@ -481,133 +481,133 @@ module.exports={ '1': { q: 'praxis', a: 'vedertaget bruk' },
   '432': { q: 'paradoxal ', a: 'skenbart orimlig, motsägelsefull' },
   '433': { q: 'placebo ', a: 'blindtablett utan verkan' },
   '434': { q: 'premedicinering ', a: ' medicinering före ett ingrepp' },
-  '435': 
+  '435':
    { q: 'regim ',
      a: 'föreskrifter för den sjukes levnadssätt och medicinering' },
   '436': { q: 'retard ', a: 'läkemedel som har fördröjd frisättning' },
-  '437': 
+  '437':
    { q: 'spektrum ',
      a: 'det verkningsområde som ett medel verkar mot' },
-  '438': 
+  '438':
    { q: 'synonym ',
      a: 'läkemedel med olika namn men med samma aktiva substans' },
-  '439': 
+  '439':
    { q: 'sätta ut',
      a: 'att sätta ut en given medicin betyder att upphöra med den' },
   '440': { q: 'etiologi ', a: 'av orsak' },
   '441': { q: 'patogenes ', a: 'vidare begrepp än etiologi (av orsak)' },
-  '442': 
+  '442':
    { q: 'endemi ',
      a: 'sjukdom som håller sig begränsad till ett visst område eller viss befolkning' },
-  '443': 
+  '443':
    { q: 'epidemi ',
      a: 'när en sjukdom eller sjukdomsframkallande beteende plötsligt ökar inom ett visst område' },
-  '444': 
+  '444':
    { q: 'incidens ',
      a: 'anger antalet eller andelen nya insjukanden under en viss tidsperiod' },
-  '445': 
+  '445':
    { q: 'prevalens ',
      a: 'anger antalet eller andelen sjuka vid en bestämd tidpunkt' },
   '446': { q: 'mortalitet ', a: 'andelen döda bland hela befolkningen' },
-  '447': 
+  '447':
    { q: 'letalitet ',
      a: 'ett mått på dödligheten bland dem som har en specifik sjukdom' },
-  '448': 
+  '448':
    { q: 'exacerbation/skov ',
      a: ' ett tillfälligt uppflammande av en sjukdm som i sig är av mer kronisk natur' },
   '449': { q: 'remission ', a: 'tillfällig förbättring' },
-  '450': 
+  '450':
    { q: 'progrediera ',
      a: 'om en sjukdom utvecklas och förvärras' },
   '451': { q: 'regrediera ', a: 'gå tillbaks' },
-  '452': 
+  '452':
    { q: 'kris ',
      a: 'sammanbrott, svår situation, dåligt eller livshotande tillstånd' },
-  '453': 
+  '453':
    { q: 'kritisk ',
      a: 'det som hör till en kris, ”som genast måste åtgärdas”' },
-  '454': 
+  '454':
    { q: 'systemisk ',
      a: 'en systemisk sjukdom är spridd i ett helt organsystem' },
   '455': { q: 'lokal ', a: 'på en plats' },
   '456': { q: 'inspektion ', a: 'granskning med ögonen' },
   '457': { q: 'auskultation ', a: 'avlyssna ' },
   '458': { q: 'palpation ', a: 'beröring med händerna' },
-  '459': 
+  '459':
    { q: 'perkussion ',
      a: 'en knackning med ett finger mot kroppsytan' },
   '460': { q: 'exspektans ', a: 'väntande, avvaktande' },
   '461': { q: 'profylaktisk ', a: 'förebyggande' },
   '462': { q: 'preventiv ', a: 'förekomma' },
   '463': { q: 'palliativ ', a: 'lindrande' },
-  '464': 
+  '464':
    { q: 'revidera ',
      a: 'ett sår tvättas rent och befrias från främmande material och död vävnad' },
-  '465': 
+  '465':
    { q: 'exision ',
      a: 'såret skärs ut och de skadade vävnaderna avlägsnas' },
   '466': { q: 'provcera ', a: 'framkalla' },
   '467': { q: 'indicerad ', a: 'motiverad, påkallad' },
-  '468': 
+  '468':
    { q: 'kontraindicerad ',
      a: 'behandlingen eller läkemedlet får inte ges' },
   '469': { q: 'Kirurgi ', a: 'operation' },
   '470': { q: 'Ortopedi ', a: 'ben, rörelseapparaten' },
-  '471': 
+  '471':
    { q: 'Anestesi och intensivvård ',
      a: 'narkos, allvarligt sjuka' },
-  '472': 
+  '472':
    { q: 'Obstetrik och gynekologi ',
      a: 'kirurgiska ingrepp i kvinnliga fortplantningsorgan, förlossning' },
-  '473': 
+  '473':
    { q: 'Öron- näsa- halssjukdomar ',
      a: 'öroninflammation, halsfluss, hörselnedsättning' },
-  '474': 
+  '474':
    { q: 'Ögonsjukdomar ',
      a: 'ögoninflammation, gluaktom (grön starr), katarakt (grå starr)' },
-  '475': 
+  '475':
    { q: 'Urologi ',
      a: 'urinorganen, prostatacancer, kateter, stomier, urinvägarna, njursten' },
-  '476': 
+  '476':
    { q: 'Plastikkirurgi ',
      a: ' ändrar och återställer felbildade eller förlorade, skadade och mindre vackra kroppsdelar, rekonstruktiv och kosmetisk kirurgi' },
   '477': { q: 'Kärlkirurgi ', a: 'blodkärl' },
-  '478': 
+  '478':
    { q: 'Handkirurgi ',
      a: 'senor, muskler, handens rörelsesjukdomar' },
   '479': { q: 'Kardiologi ', a: 'kärlen vid hjärtat (hjärtkärl)' },
-  '480': 
+  '480':
    { q: 'Endokrinologi och diabetologi ',
      a: 'hormoner, diabetes, sköldkörteln' },
   '481': { q: 'Lungsjukdomar ', a: 'kol, astma, lungemfysem' },
   '482': { q: 'Hematologi ', a: 'blodsjukdomar, blodbrist, anemi' },
   '483': { q: 'Allergologi ', a: 'allergier' },
   '484': { q: 'Geriatrik ', a: 'äldres sjukdomar, vård om äldre' },
-  '485': 
+  '485':
    { q: 'Neonatologi ',
      a: 'för tidigt födda, ”intensivvård för bebisar”' },
   '486': { q: 'Psykiatri ', a: 'psykiska sjukdomar' },
-  '487': 
+  '487':
    { q: 'Neurologi ',
      a: 'nervsystemet, signaler, domningar, rörelseförmåga, reflexer, misstänkt stroke' },
   '488': { q: 'Allmänmedicin ', a: 'vårdcentral (kan lite om mycket)' },
   '489': { q: 'Onkologi ', a: 'cancer, tumörer' },
-  '490': 
+  '490':
    { q: 'Infektionsmedicin ',
      a: 'virus, bakterier, smittbegränsa, vaccinationer' },
-  '491': 
+  '491':
    { q: 'Gynekologisk onkologi ',
      a: 'gynekologisk cancer (kvinnliga organen)' },
-  '492': 
+  '492':
    { q: 'Arbets- och miljömedicin ',
      a: 'ergonomi och yttre faktorer (förebyggande och ' },
-  '493': 
+  '493':
    { q: 'Hud- och könssjukdomar ',
      a: 'gonorré, malignt melanom, psoriasis' },
-  '494': 
+  '494':
    { q: 'Reumatologi ',
      a: 'smärta och sämre rörelseförmåga, reumatiod artrit, artros' },
-  '495': 
+  '495':
    { q: 'Akutsjukvård ',
      a: 'akuta, oplanerade patienter med sjukdomar eller skador som kräver omedelbar vårdinsat' },
   '496': { q: 'Smärtlindring ', a: '' },
