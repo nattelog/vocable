@@ -73,7 +73,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
      a: 'En internationell sjukdomsklassifikation som används för dödsorsaksstatistik och redovisning av diagnoser hos sjukvårdade patienter. Det är främst en statistisk klassifikation.' },
   '62':
    { q: 'Vad betyder förkortningen ICD? ',
-     a: 'International List of Causes of Deaths' },
+     a: 'International Statistics Classification of Diseases and Related Health Problems' },
   '63':
    { q: 'Vad är främsta syftet med ICD? ',
      a: 'De ska på ett meningsfullt sätt gruppera sjukdomar och dödsorsaker för översiktliga statistiska sammanställningar och analyser.' },
