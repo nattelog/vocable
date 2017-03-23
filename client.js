@@ -145,7 +145,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
      a: 'En internationell sjukdomsklassifikation som används för dödsorsaksstatistik och redovisning av diagnoser hos sjukvårdade patienter. Det är främst en statistisk klassifikation.' },
   '62':
    { q: 'Vad betyder förkortningen ICD? ',
-     a: 'International List of Causes of Deaths' },
+     a: 'International Statistics Classification of Diseases and Related Health Problems' },
   '63':
    { q: 'Vad är främsta syftet med ICD? ',
      a: 'De ska på ett meningsfullt sätt gruppera sjukdomar och dödsorsaker för översiktliga statistiska sammanställningar och analyser.' },
@@ -710,28 +710,72 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
 
 
 (function() {
-  var database = __webpack_require__(0);
-
   var UNSEEN = 0;
   var FAILED = -1;
   var PASSED = 1;
 
-  function Exercise(id, question, answer) {
-    this.status = UNSEEN;
+  function LocalStorage(name) {
+    this.name = name;
+
+    this.reset = function() {
+      localStorage.removeItem(this.name);
+    };
+
+    this.store = function(exerciseList) {
+      var list = exerciseList.exercises;
+      localStorage.setItem(this.name, JSON.stringify(
+        list.map(function(exercise) {
+          return {
+            id: exercise.id,
+            question: exercise.question,
+            answer: exercise.answer,
+            status: exercise.status
+          };
+        }))
+      );
+    };
+
+    this.load = function() {
+      var list = localStorage.getItem(this.name);
+      list = JSON.parse(list);
+
+      if (list) {
+        return list.map(function(exercise) {
+          return new Exercise(exercise.id, exercise.question, exercise.answer, exercise.status);
+        });
+      }
+    };
+  }
+
+  function JSONStorage(json) {
+    this.json = json;
+
+    this.load = function() {
+      var that = this;
+      var keys = Object.keys(this.json);
+      return keys.map(function(key) {
+        var exercise = that.json[key];
+        return new Exercise(key, exercise.q, exercise.a);
+      });
+    };
+  }
+
+  function Exercise(id, question, answer, status) {
+    this.status = status || UNSEEN;
     this.id = id;
     this.question = question;
     this.answer = answer;
 
     this.unsee = function() {
-      this.status = UNSEEN;  
+      this.status = UNSEEN;
     };
 
     this.pass = function() {
-      this.status = PASSED; 
+      this.status = PASSED;
     };
 
     this.fail = function() {
-      this.status = FAILED;    
+      this.status = FAILED;
     };
   }
 
@@ -739,12 +783,12 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     this.exercises = [];
 
     this.isEmpty = function() {
-      return this.exercises.length === 0;  
+      return this.exercises.length === 0;
     };
 
     this.getAllByStatus = function(status) {
       return this.exercises.filter(function(exercise) {
-        return exercise.status === status;  
+        return exercise.status === status;
       });
     };
 
@@ -753,14 +797,14 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
         return this.getAllByStatus(status).length;
       }
       else {
-        return this.exercises.length;  
+        return this.exercises.length;
       }
     };
 
     this.addExercise = function(exercise) {
       this.exercises.push(exercise);
       this.exercises.sort(function(i1, i2) {
-         return i1.id - i2.id; 
+         return i1.id - i2.id;
       });
     };
 
@@ -770,21 +814,21 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
         if (item.id === exercise.id) {
           index = i;
           return true;
-        } 
+        }
       });
 
       if (index > -1) {
-        this.exercises.splice(index, 1);   
+        this.exercises.splice(index, 1);
       }
       else {
-        throw new Error('Cannot remove exercise: not found');  
+        throw new Error('Cannot remove exercise: not found');
       }
     };
 
     this.getExercise = function(exercise) {
       return this.exercises.find(function(item) {
-        return item.id === exercise.id; 
-      });  
+        return item.id === exercise.id;
+      });
     };
 
     this.unseeExercise = function(exercise) {
@@ -792,16 +836,16 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     };
 
     this.passExercise = function(exercise) {
-      this.getExercise(exercise).pass();  
+      this.getExercise(exercise).pass();
     };
 
     this.failExercise = function(exercise) {
-      this.getExercise(exercise).fail();  
+      this.getExercise(exercise).fail();
     };
 
     this.unseeAll = function() {
       this.exercises.forEach(function(exercise) {
-        exercise.unsee(); 
+        exercise.unsee();
       });
     };
 
@@ -821,7 +865,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
           case FAILED:
             failedCount++;
             break;
-        }  
+        }
       });
 
       return {
@@ -835,7 +879,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
       var candidates = this.getAllByStatus(status);
 
       if (candidates.length > 0) {
-        var randomIndex = Math.floor(Math.random() * candidates.length);  
+        var randomIndex = Math.floor(Math.random() * candidates.length);
         return candidates[randomIndex];
       }
       else {
@@ -844,7 +888,11 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     };
 
     this.forEach = function(fn) {
-      return this.exercises.forEach(fn);  
+      return this.exercises.forEach(fn);
+    };
+
+    this.loadFromStorage = function(storage) {
+      this.exercises = storage.load();
     };
   }
 
@@ -865,7 +913,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     };
 
     this.getStatus = function() {
-      return this.statusBars[this.current].getStatus();  
+      return this.statusBars[this.current].getStatus();
     };
   }
 
@@ -874,25 +922,21 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     this.combo = new ExerciseList();
     this.onFinish = onFinish;
 
-    // populate exercises from database
-    var keys = Object.keys(database);
-    var that = this;
+    this.exercisesStorage = new LocalStorage('exercises');
+    this.comboStorage = new LocalStorage('combo');
+    var jsonStorage = new JSONStorage(__webpack_require__(0));
 
-    keys.forEach(function(id) {
-      var item = database[id];
-      var question = item.q;
-      var answer = item.a;
-
-      that.exercises.addExercise(new Exercise(id, question, answer));
-    });
+    // initialize the table from data in storage
+    this.exercises.exercises = this.exercisesStorage.load() || jsonStorage.load();
+    this.combo.exercises = this.comboStorage.load() || [];
 
     this.getAllExercises = function() {
-      return this.exercises;  
+      return this.exercises;
     };
 
     this.getRandomExercise = function() {
       if (this.combo.isEmpty()) {
-        this.initCombo();  
+        this.initCombo();
       }
       return this.combo.getRandomExercise(UNSEEN) || this.combo.getRandomExercise(FAILED);
     };
@@ -905,6 +949,8 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     this.reset = function() {
       this.combo = new ExerciseList();
       this.exercises.unseeAll();
+      this.exercisesStorage.reset();
+      this.comboStorage.reset();
     };
 
     this.getStatus = function() {
@@ -912,19 +958,19 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     };
 
     this.getComboStatus = function() {
-      return this.combo.getStatus();  
+      return this.combo.getStatus();
     };
 
     this.passExercise = function(exercise) {
-      this.exercises.passExercise(exercise);  
+      this.exercises.passExercise(exercise);
       this.combo.removeExercise(exercise);
 
       if (this.combo.isEmpty()) {
-        var passedCount = this.exercises.count(PASSED); 
+        var passedCount = this.exercises.count(PASSED);
         var totalCount = this.exercises.count();
-        
+
         if (passedCount === totalCount) {
-          return this.onFinish();  
+          return this.onFinish();
         }
 
         var unseenList = new ExerciseList();
@@ -933,7 +979,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
 
         for (var i = 0; i < newComboCount; ++i) {
           var unseenExercise = unseenList.getRandomExercise(UNSEEN);
-          this.combo.addExercise(unseenExercise);  
+          this.combo.addExercise(unseenExercise);
           unseenList.removeExercise(unseenExercise);
         }
 
@@ -941,23 +987,29 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
         var passedExercises = this.exercises.getAllByStatus(PASSED);
         passedExercises.forEach(function(passedExercise) {
           passedExercise.unsee();
-          that.combo.addExercise(passedExercise);  
+          that.combo.addExercise(passedExercise);
         });
       }
-      
-      return this.combo.getRandomExercise(UNSEEN) || this.combo.getRandomExercise(FAILED); 
+
+      this.exercisesStorage.store(this.exercises);
+      this.comboStorage.store(this.combo);
+
+      return this.combo.getRandomExercise(UNSEEN) || this.combo.getRandomExercise(FAILED);
     };
 
     this.failExercise = function(exercise) {
       this.exercises.failExercise(exercise);
       this.combo.failExercise(exercise);
 
+      this.exercisesStorage.store(this.exercises);
+      this.comboStorage.store(this.combo);
+
       return this.combo.getRandomExercise(UNSEEN) || this.combo.getRandomExercise(FAILED);
     };
   }
 
   function Button(buttonClass, iconClass, onClick) {
-    var button = document.createElement('button'); 
+    var button = document.createElement('button');
     var icon = document.createElement('icon');
 
     button.setAttribute('type', 'button');
@@ -978,11 +1030,11 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     this.vocable = vocable;
 
     this.onLeftButtonClick = function() {
-      console.log(this);  
+      console.log(this);
     };
 
     this.onRightButtonClick = function() {
-      console.log(this);  
+      console.log(this);
     };
 
     this.onStatusBarClick = function() {
@@ -1017,10 +1069,10 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
 
       if (rest !== 0) {
         if (unseenPerc === 0) {
-          failedPerc -= rest;  
+          failedPerc -= rest;
         }
         else {
-          unseenPerc -= rest;  
+          unseenPerc -= rest;
         }
       }
 
@@ -1037,7 +1089,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
     this.onStart = onStart;
 
     this.onLeftButtonClick = function() {
-      this.vocable.reset();  
+      this.vocable.reset();
       this.showContent();
       this.updateStatus();
     };
@@ -1053,7 +1105,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
       // setup buttons
       this.leftButton.innerHTML = '';
       this.leftButton.appendChild(new Button(
-        'btn btn-default', 
+        'btn btn-default',
         'fa fa-repeat',
         this.onLeftButtonClick.bind(this)
       ));
@@ -1075,19 +1127,19 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
         var bubble = document.createElement('span');
 
         if (exercise.status === PASSED) {
-          bubble.style.backgroundColor = '#5cb85c';  
+          bubble.style.backgroundColor = '#5cb85c';
         }
         if (exercise.status === FAILED) {
-          bubble.style.backgroundColor = '#d9534f';  
+          bubble.style.backgroundColor = '#d9534f';
         }
 
         bubble.className = 'table-item badge';
         bubble.innerHTML = exercise.id;
         bubble.onclick = function() {
           if (that.vocable.combo.isEmpty()) {
-            that.vocable.combo.addExercise(exercise);  
+            that.vocable.combo.addExercise(exercise);
+            that.onStart(exercise);
           }
-          that.onStart(exercise);  
         };
         that.content.appendChild(bubble);
       });
@@ -1095,7 +1147,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
   }
 
   function ExercisePage(options, vocable, onExit) {
-    Page.call(this, options, vocable);  
+    Page.call(this, options, vocable);
     this.onExit = onExit;
 
     this.showContent = function(exercise) {
@@ -1107,10 +1159,10 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
       // setup buttons
       this.leftButton.innerHTML = '';
       this.leftButton.appendChild(new Button(
-        'btn btn-danger', 
+        'btn btn-danger',
         'fa fa-thumbs-down',
         function() {
-          that.showContent(that.vocable.failExercise(exercise));  
+          that.showContent(that.vocable.failExercise(exercise));
           that.updateStatus();
         }
       ));
@@ -1119,9 +1171,9 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
         'btn btn-success',
         'fa fa-thumbs-up',
         function() {
-          that.showContent(that.vocable.passExercise(exercise)); 
+          that.showContent(that.vocable.passExercise(exercise));
           that.updateStatus();
-        } 
+        }
       ));
 
       // setup title
@@ -1134,7 +1186,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
       title.innerHTML = 'Question ' + exercise.id;
 
       exit.onclick = function() {
-        that.onExit(); 
+        that.onExit();
       };
 
       container.appendChild(exit);
@@ -1189,10 +1241,10 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
       header: document.getElementById('header')
     };
     var exercisesPage = new ExercisesPage(options, vocable, function(exercise) {
-      exercisePage.showContent(exercise);   
+      exercisePage.showContent(exercise);
     });
     var exercisePage = new ExercisePage(options, vocable, function() {
-      exercisesPage.showContent();  
+      exercisesPage.showContent();
     });
 
     exercisesPage.updateStatus();
