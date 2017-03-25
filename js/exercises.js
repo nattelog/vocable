@@ -545,7 +545,7 @@ module.exports = { '1': { q: 'praxis', a: 'vedertaget bruk' },
   '465':
    { q: 'exision ',
      a: 'såret skärs ut och de skadade vävnaderna avlägsnas' },
-  '466': { q: 'provcera ', a: 'framkalla' },
+  '466': { q: 'provocera ', a: 'framkalla' },
   '467': { q: 'indicerad ', a: 'motiverad, påkallad' },
   '468':
    { q: 'kontraindicerad ',
