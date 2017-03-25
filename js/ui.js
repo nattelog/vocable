@@ -500,7 +500,7 @@
 
       // make answer blurry at first
       answer.style.color = 'transparent';
-      answer.style.textShadow = '0 0 5px rgba(0, 0, 0, 0.5)';
+      answer.style.textShadow = '0 0 20px rgba(0, 0, 0, 0.5)';
 
       // remove blur on click
       answer.onclick = function() {
