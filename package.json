@@ -4,7 +4,7 @@
   "description": "Vocable exercise tool",
   "main": "index.js",
   "scripts": {
-    "build": "browserify js/ui.js -o build/client.js",
+    "build": "webpack",
     "dev": "nodemon --ignore build/ --exec npm run build"
   },
   "repository": {
