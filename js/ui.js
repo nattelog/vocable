@@ -487,7 +487,7 @@
       // setup question and answer
       var question = document.createElement('h3');
       var answer = document.createElement('p');
-      var toggleQA = Math.random() >= 0.5;
+      var toggleQA = true; // Math.random() >= 0.5;
 
       if (toggleQA) {
         question.innerHTML = exercise.question;
