@@ -484,18 +484,35 @@
       container.appendChild(title);
       this.header.appendChild(container);
 
+      function createWrapper(tag, content) {
+        var paragraphs = content.split('\n');
+        var wrapper = document.createElement('div');
+
+        paragraphs.forEach(function(p) {
+          var elem = document.createElement(tag);
+          elem.innerHTML = p;
+          wrapper.appendChild(elem);
+        });
+
+        return wrapper;
+      }
+
       // setup question and answer
-      var question = document.createElement('h3');
-      var answer = document.createElement('p');
+      // var question = document.createElement('h3');
+      // var answerWrapper = document.createElement('div');
+      var question;
+      var answer;
       var toggleQA = true; // Math.random() >= 0.5;
 
       if (toggleQA) {
-        question.innerHTML = exercise.question;
-        answer.innerHTML = exercise.answer;
+        question = createWrapper('h3', exercise.question);
+        answer = createWrapper('p', exercise.answer);
       }
       else {
-        question.innerHTML = exercise.answer;
-        answer.innerHTML = exercise.question;
+        question = createWrapper('h3', exercise.answer);
+        answer = createWrapper('p', exercise.question);
+        // question.innerHTML = exercise.answer;
+        // answer.innerHTML = exercise.question;
       }
 
       // make answer blurry at first

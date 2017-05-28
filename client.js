@@ -88,7 +88,7 @@ module.exports = { "1": {
   },
   "5": {
     "q": "Bristande journalföring och bristande rutiner för journalföring kritiseras ofta i tillsynsmyndighetens klagomålsbeslut. Ge fem exempel på allvarliga fel och brister som kan uppstå vid journalföring och dess konsekvenser (för patienten och/eller andra). Analysera och diskutera kring grundorsakerna bakom felen och hur felen skulle ha kunnat förebyggas. ",
-    "a": "1. Läkaren förskriver läkemedel men skriver inte in det i journalen, syns inte vid nästa besök eller när man kollar i journalen. Det kan bli missförstånd och allvarliga problem för patienten och läkaren. Grundorsaken kan vara att läkaren inte hinner skriva in, glömmer för han är stressad. För att det skulle kunnat förebyggas ska det finnas rutiner för det, och att man får möjligheten att skriva in det direkt.\\n2. Skriver journal på fel patient. Orsaken kan vara att läkaren dikterat på fel patient, ouppmärksam sekreterare. Förebyggas genom rutiner för säkerhetskontroller"
+    "a": "1. Läkaren förskriver läkemedel men skriver inte in det i journalen, syns inte vid nästa besök eller när man kollar i journalen. Det kan bli missförstånd och allvarliga problem för patienten och läkaren. Grundorsaken kan vara att läkaren inte hinner skriva in, glömmer för han är stressad. För att det skulle kunnat förebyggas ska det finnas rutiner för det, och att man får möjligheten att skriva in det direkt.\n2. Skriver journal på fel patient. Orsaken kan vara att läkaren dikterat på fel patient, ouppmärksam sekreterare. Förebyggas genom rutiner för säkerhetskontroller"
   },
   "6": {
     "q": "I Patientdatalagen anges att uppgifter som ska antecknas ska föras in i journalen så snart som möjligt. Varför är det viktigt att så görs? ",
@@ -112,11 +112,11 @@ module.exports = { "1": {
   },
   "11": {
     "q": "Ge tre exempel på när en läkare kan få tillgång en patients uppgifter som finns tillgängliga i det sammanhållna journalföringssystemet, utan att ha en aktuell patientrelation?r ",
-    "a": "1. Om läkaren av annat skäl behöver uppgifterna för sitt arbete inom hälso- och sjukvården.\\n2. Vid utfärdande av intyg.\\n3. Patienten samtycker till det."
+    "a": "1. Om läkaren av annat skäl behöver uppgifterna för sitt arbete inom hälso- och sjukvården.\n2. Vid utfärdande av intyg.\n3. Patienten samtycker till det."
   },
   "12": {
-    "q": "Patientsäkerhetslagen anger att Hälso-och sjukvårdspersonal har rapporteringsskyldighet.\\na. Vad innebär denna skyldighet och vad är de övergripande målen med denna skyldighet?\\nb. Vilka kan konsekvenserna bli för den person som underlåter att rapportera enligt denna skyldighet?",
-    "a": "a. Vårdpersonalen ska rapportera till vårdgivaren risker för vårdskador samt händelser som har medfört eller hade kunnat medföra en vårdskada. Detta för att bidra till att hög patientsäkerhet upprätthålls. För att vårdgivaren ska kunna rapportera enligt lex Maria till IVO behövs att alla berörda aktörer fullgör sina skyldigheter.\\nb. IVO kan rikta kritik mot någon som inte rapporterat risker och händelser till vårdgivaren. Hens lämplighet att utöva yrket ifrågasätts, kan riskera åläggas prövotid och eventuell omplacering eller avstängning."
+    "q": "Patientsäkerhetslagen anger att Hälso-och sjukvårdspersonal har rapporteringsskyldighet.\na. Vad innebär denna skyldighet och vad är de övergripande målen med denna skyldighet?\nb. Vilka kan konsekvenserna bli för den person som underlåter att rapportera enligt denna skyldighet?",
+    "a": "a. Vårdpersonalen ska rapportera till vårdgivaren risker för vårdskador samt händelser som har medfört eller hade kunnat medföra en vårdskada. Detta för att bidra till att hög patientsäkerhet upprätthålls. För att vårdgivaren ska kunna rapportera enligt lex Maria till IVO behövs att alla berörda aktörer fullgör sina skyldigheter.\nb. IVO kan rikta kritik mot någon som inte rapporterat risker och händelser till vårdgivaren. Hens lämplighet att utöva yrket ifrågasätts, kan riskera åläggas prövotid och eventuell omplacering eller avstängning."
   },
   "13": {
     "q": "Melior och PMO är två journalsystem som används i bl.a. Region Gävleborg. Ge exempel på tre andra journalsystem som används i andra delar av landet. ",
@@ -128,7 +128,7 @@ module.exports = { "1": {
   },
   "15": {
     "q": "Vad betyder begreppen ’autentisering’ och ’stark autentisering’? ",
-    "a": "Autentisering: kontroll av uppgiven identitet\\nStark autentisering: Kontroll av uppgiven identitet på två olika sätt. Säkrare än ett vanligt användarnamn och lösenord för att säkerställ att det är rätt person, t.ex. e-legitimation"
+    "a": "Autentisering: kontroll av uppgiven identitet\nStark autentisering: Kontroll av uppgiven identitet på två olika sätt. Säkrare än ett vanligt användarnamn och lösenord för att säkerställ att det är rätt person, t.ex. e-legitimation"
   },
   "16": {
     "q": "Vad är en informationssäkerhetspolicy? ",
@@ -143,8 +143,8 @@ module.exports = { "1": {
     "a": "Vem som haft åtkomst till uppgifterna och när och vad som har gjorts med uppgifterna."
   },
   "19": {
-    "q": "Enligt Patientsäkerhetslagen ska vårdgivaren årligen upprätta en patientsäkerhetsberättelse.\\na. Ge 5 exempel på uppgifter som denna berättelse ska innehålla?\\nb. Vem har rätt att få ta del av patientsäkerhetsberättelsen?",
-    "a": "1. Hur patientsäkerhetsarbetet har bedrivits under föregående kalenderår\\n2. Vilka åtgärder som har vidtagits för att öka patientsäkerheten\\n3. Vilka resultat som har uppnåtts\\nb. För den som önskar att ta dela av den."
+    "q": "Enligt Patientsäkerhetslagen ska vårdgivaren årligen upprätta en patientsäkerhetsberättelse.\na. Ge 5 exempel på uppgifter som denna berättelse ska innehålla?\nb. Vem har rätt att få ta del av patientsäkerhetsberättelsen?",
+    "a": "1. Hur patientsäkerhetsarbetet har bedrivits under föregående kalenderår\n2. Vilka åtgärder som har vidtagits för att öka patientsäkerheten\n3. Vilka resultat som har uppnåtts\nb. För den som önskar att ta dela av den."
   },
   "20": {
     "q": "Läkemedelsgenomgångar är en metod för kartläggning av en patients samtliga ordinerade och använda läkemedel. Vad är syftet med denna genomgång?",
@@ -156,15 +156,15 @@ module.exports = { "1": {
   },
   "22": {
     "q": "Vad är en MAS (Medicinskt ansvarig sjuksköterska)? Och vad är hennes uppdrag?",
-    "a": "1.	att det finns sådana rutiner att kontakt med läkare eller annan hälso- och sjukvårdspersonal när en patients tillstånd fordrar det\\n2.	att beslut om att delegera ansvar för vårduppgifter är förenliga med säkerheten för patienterna\\n3.	att anmälan görs till den nämnd som har ledningen av hälso-och sjukvårdsverksamheten, om en patient i samband med vård eller behandling drabbats av eller utsatts för risk att drabbas av allvarlig skada eller sjukdom."
+    "a": "1.	att det finns sådana rutiner att kontakt med läkare eller annan hälso- och sjukvårdspersonal när en patients tillstånd fordrar det\n2.	att beslut om att delegera ansvar för vårduppgifter är förenliga med säkerheten för patienterna\n3.	att anmälan görs till den nämnd som har ledningen av hälso-och sjukvårdsverksamheten, om en patient i samband med vård eller behandling drabbats av eller utsatts för risk att drabbas av allvarlig skada eller sjukdom."
   },
   "23": {
     "q": "Från o med 1 april 2017 gäller en uppdaterad version av Hälso- och sjukvårdslagen (2017:30). Var kan du hitta de senaste versionerna av lagar och förordningar?",
     "a": "www.lagrummet.se samt på www.riksdagen.se och myndigheternas hemsidor (myndigheternas föreskrifter)"
   },
   "24": {
-    "q": "I 5:e kapitlet i Hälso- och sjukvårdslagen anges att kvaliteten i verksamheten systematiskt och fortlöpande ska utvecklas och säkras. Denna skyldighet återkommer i bl.a. Patientssäkerhetslagen (PSL) samt i Socialstyrelsens föreskrifter t.ex. SOSFS 2011:9. Ge 3 exempel på vad denna skyldighet innebär för:\\na. Vårdgivaren\\nb. Verksamhetschefen\\nc. Hälso- och sjukvårdspersonal ",
-    "a": "a. Vårdgivaren ska:\\n-	se till att det finns ledningssystem för verksamheten\\n-	med stöd av ledningssystemet planera, leda, kontrollera, följa upp, utvärdera och förbättra verksamheten\\n-	ange hur uppgifterna som ingår i arbetet med att systematiskt och fortlöpande utveckla och säkra kvaliteten är fördelade i verksamheten\\nb. Verksamhetschefen ska:\\n- se till att det finns rutiner och arbetsinstruktioner för t.ex. behörighet\\nc. Hälso- och sjukvårdspersonal ska:\\n- rapportera risker och brister\\n- se till att följa de rutiner som finns\\n- komma med förbättringsförslag"
+    "q": "I 5:e kapitlet i Hälso- och sjukvårdslagen anges att kvaliteten i verksamheten systematiskt och fortlöpande ska utvecklas och säkras. Denna skyldighet återkommer i bl.a. Patientssäkerhetslagen (PSL) samt i Socialstyrelsens föreskrifter t.ex. SOSFS 2011:9. Ge 3 exempel på vad denna skyldighet innebär för:\na. Vårdgivaren\nb. Verksamhetschefen\nc. Hälso- och sjukvårdspersonal ",
+    "a": "a. Vårdgivaren ska:\n-	se till att det finns ledningssystem för verksamheten\n-	med stöd av ledningssystemet planera, leda, kontrollera, följa upp, utvärdera och förbättra verksamheten\n-	ange hur uppgifterna som ingår i arbetet med att systematiskt och fortlöpande utveckla och säkra kvaliteten är fördelade i verksamheten\nb. Verksamhetschefen ska:\n- se till att det finns rutiner och arbetsinstruktioner för t.ex. behörighet\nc. Hälso- och sjukvårdspersonal ska:\n- rapportera risker och brister\n- se till att följa de rutiner som finns\n- komma med förbättringsförslag"
   },
   "25": {
     "q": "Vad menas med begreppet vårdgivare? ",
@@ -180,7 +180,7 @@ module.exports = { "1": {
   },
   "28": {
     "q": "Vårdgivare ska bedriva ett aktivt patientsäkerhetsarbete för att identifiera risker för vårdskador och för att inhämta information om risker. Ange 5 användbara källor för att hitta och uppmärksamma risker. ",
-    "a": "-	Personalens riskbedömningar och rapporteringar\\n-	Systematiska journalgenomgångar\\n-	Intervjuer och enkäter till patienter och deras anhöriga\\n-	Observationer för att mäta följsamhet till fastställda rutiner och nationella riktlinjer\\n-	Ärenden som behandlats i patientnämnder"
+    "a": "-	Personalens riskbedömningar och rapporteringar\n-	Systematiska journalgenomgångar\n-	Intervjuer och enkäter till patienter och deras anhöriga\n-	Observationer för att mäta följsamhet till fastställda rutiner och nationella riktlinjer\n-	Ärenden som behandlats i patientnämnder"
   },
   "29": {
     "q": "Riskinventeringar bör göras regelbundet och alltid när ny teknik införs och vid organisationsförändringar. Ge två exempel på andra situationer på en hälsocentral där riskbedömning behöver göras. ",
@@ -192,7 +192,7 @@ module.exports = { "1": {
   },
   "31": {
     "q": "Ge fyra exempel på vad som kan ingå i en egenkontroll.",
-    "a": "Egenkontrollen kan innefatta:\\n-	jämförelser av verksamhetens resultat med uppgifter i nationella och regionala kvalitetsregister enligt 7 kap. patientdatalagen (2008:355),\\n-	jämförelser av verksamhetens resultat dels med uppgifter i öppna jämförelser, dels med resultat för andra verksamheter,\\n-	jämförelser av verksamhetens nuvarande resultat med tidigare resultat,\\n-	målgruppsundersökningar,\\n-	granskning av journaler, akter och annan dokumentation,\\n-	undersökning av om det finns förhållningssätt och attityder hos personalen som kan leda till brister i verksamhetens kvalitet,\\n-	analys av uppgifter från patientnämnder, och\\n-	inhämtande av synpunkter från revisorer och intressenter."
+    "a": "Egenkontrollen kan innefatta:\n-	jämförelser av verksamhetens resultat med uppgifter i nationella och regionala kvalitetsregister enligt 7 kap. patientdatalagen (2008:355),\n-	jämförelser av verksamhetens resultat dels med uppgifter i öppna jämförelser, dels med resultat för andra verksamheter,\n-	jämförelser av verksamhetens nuvarande resultat med tidigare resultat,\n-	målgruppsundersökningar,\n-	granskning av journaler, akter och annan dokumentation,\n-	undersökning av om det finns förhållningssätt och attityder hos personalen som kan leda till brister i verksamhetens kvalitet,\n-	analys av uppgifter från patientnämnder, och\n-	inhämtande av synpunkter från revisorer och intressenter."
   },
   "32": {
     "q": "Vad menas med begreppet avvikelse?",
@@ -212,11 +212,11 @@ module.exports = { "1": {
   },
   "36": {
     "q": "Vilken typ av sjukvård och tandvård har asylsökande som är över 18 år? ",
-    "a": "Asylsökande och personer utan tillstånd som är 18 år eller äldre har rätt till:\\n-	Vård som inte kan anstå\\n-	Mödrahälsovård\\n-	Vård vid abort\\n-	Preventivmedelsrådgivning\\n-	Läkemedel som förskrivs i samband med hälso- och sjukvård\\n-	Hjälpmedel som är direkt kopplade till den vård de har rätt till\\n-	Vård och åtgärder enligt smittskyddslagen\\n-	Akut tandvård och tandvård som inte kan anstå\\n-	En hälsoundersökning (på särskild mottagning)"
+    "a": "Asylsökande och personer utan tillstånd som är 18 år eller äldre har rätt till:\n-	Vård som inte kan anstå\n-	Mödrahälsovård\n-	Vård vid abort\n-	Preventivmedelsrådgivning\n-	Läkemedel som förskrivs i samband med hälso- och sjukvård\n-	Hjälpmedel som är direkt kopplade till den vård de har rätt till\n-	Vård och åtgärder enligt smittskyddslagen\n-	Akut tandvård och tandvård som inte kan anstå\n-	En hälsoundersökning (på särskild mottagning)"
   },
   "37": {
     "q": "Faktainsamlandet kring en inträffad händelse sammanfattas ibland med akronymen NV4H? Vad betyder den? ",
-    "a": "När = När upptäcktes felet/händelsen?\\nVad = Vad har hänt?\\nVad består felet/händelsen av?\\nVar = Var upptäcktes felet/händelsen?\\nVem = Vem upptäckte felet/händelsen?\\nVarför = Varför uppstod felet/händelsen\\nHur = Hur uppstod felet/händelsen?"
+    "a": "När = När upptäcktes felet/händelsen?\nVad = Vad har hänt?\nVad består felet/händelsen av?\nVar = Var upptäcktes felet/händelsen?\nVem = Vem upptäckte felet/händelsen?\nVarför = Varför uppstod felet/händelsen\nHur = Hur uppstod felet/händelsen?"
   },
   "38": {
     "q": "Vad är skillnaden mellan ett intyg och ett utlåtande?",
@@ -231,20 +231,20 @@ module.exports = { "1": {
     "a": "Datainspektionen."
   },
   "41": {
-    "q": "Förklara nedan begrepp\\na. Personuppgiftsansvarig\\nb. Personuppgiftsbiträde\\nc. Personuppgiftsombud",
-    "a": "a. Personuppgiftsansvarig är den som ensam eller tillsammans med andra behandlar personuppgifter i sin verksamhet.\\nb. Personuppgiftsbiträde är den som behandlar personuppgifter för den personuppgiftsansvariges räkning.\\nc. Personuppgiftsombud är en person som ser till att personuppgifter behandlas på ett korrekt och lagligt sätt inom den egna organisationen."
+    "q": "Förklara nedan begrepp\na. Personuppgiftsansvarig\nb. Personuppgiftsbiträde\nc. Personuppgiftsombud",
+    "a": "a. Personuppgiftsansvarig är den som ensam eller tillsammans med andra behandlar personuppgifter i sin verksamhet.\nb. Personuppgiftsbiträde är den som behandlar personuppgifter för den personuppgiftsansvariges räkning.\nc. Personuppgiftsombud är en person som ser till att personuppgifter behandlas på ett korrekt och lagligt sätt inom den egna organisationen."
   },
   "42": {
-    "q": "EU har i april 2016 beslutat om ett nytt regelverk för behandling av personuppgifter som ska börja tillämpas i medlemsstaterna.\\na. När börjar den gälla?\\nb. För vem gäller den?",
-    "a": "a. maj 2018\\nb. för hela EU"
+    "q": "EU har i april 2016 beslutat om ett nytt regelverk för behandling av personuppgifter som ska börja tillämpas i medlemsstaterna.\na. När börjar den gälla?\nb. För vem gäller den?",
+    "a": "a. maj 2018\nb. för hela EU"
   },
   "43": {
-    "q": "Med den nya dataskyddsförordningen införs några nya begrepp bl.a. personuppgiftsincident och dataskyddsombud.\\na. Vad innebär personuppgiftsincident?\\nb. Vad är ett dataskyddsombud enligt den nya förordningen?",
-    "a": "a. Personuppgiftincident är en säkerhetsincident som leder till oavsiktlig eller olaglig förstörning, förlust eller ändring av de personuppgifter som behandlats.\\nb. Dataskyddsombud är det nya personuppgiftsombudet. Dataskyddsombudets uppgifter är bland annat att informera och ge råd inom den egna organisationen om vilka skyldigheter som gäller enligt såväl förordningen som nationella bestämmelser. Ombudet ska också bevaka att dessa regler följs och ge råd om den konsekvensbedömning avseende dataskydd som ska göras enligt förordningen. Slutligen ska ombudet fungera som kontaktpunkt för dataskyddsmyndigheten och samarbeta med denna. "
+    "q": "Med den nya dataskyddsförordningen införs några nya begrepp bl.a. personuppgiftsincident och dataskyddsombud.\na. Vad innebär personuppgiftsincident?\nb. Vad är ett dataskyddsombud enligt den nya förordningen?",
+    "a": "a. Personuppgiftincident är en säkerhetsincident som leder till oavsiktlig eller olaglig förstörning, förlust eller ändring av de personuppgifter som behandlats.\nb. Dataskyddsombud är det nya personuppgiftsombudet. Dataskyddsombudets uppgifter är bland annat att informera och ge råd inom den egna organisationen om vilka skyldigheter som gäller enligt såväl förordningen som nationella bestämmelser. Ombudet ska också bevaka att dessa regler följs och ge råd om den konsekvensbedömning avseende dataskydd som ska göras enligt förordningen. Slutligen ska ombudet fungera som kontaktpunkt för dataskyddsmyndigheten och samarbeta med denna. "
   },
   "44": {
-    "q": "Arkivlagen (ArkL) innehåller ett antal regler om vad kommuner och landsting ska göra när det gäller arkivbildning, ansvarsfördelning, arkivvård och gallring. Innehållet i arkiven är myndighetens allmänna handlingar och arbetsmaterial som tas om hand för arkivering och som därigenom blir allmänna handlingar.\\na.	Patientjournalen är en allmän handling men den kan ändå inte lämnas ut enligt offentlighetsprincipen, varför inte?\\nb.	Vad menas med gallring av en allmän handling?",
-    "a": "a. Patientjournalen omfattas av sekretess\\nb. Gallring: förstöra"
+    "q": "Arkivlagen (ArkL) innehåller ett antal regler om vad kommuner och landsting ska göra när det gäller arkivbildning, ansvarsfördelning, arkivvård och gallring. Innehållet i arkiven är myndighetens allmänna handlingar och arbetsmaterial som tas om hand för arkivering och som därigenom blir allmänna handlingar.\na.	Patientjournalen är en allmän handling men den kan ändå inte lämnas ut enligt offentlighetsprincipen, varför inte?\nb.	Vad menas med gallring av en allmän handling?",
+    "a": "a. Patientjournalen omfattas av sekretess\nb. Gallring: förstöra"
   },
   "45": {
     "q": "Hur länge ska en patientjournal sparas efter den sista anteckningen? I vilken lag hittar du uppgifter om detta? ",
@@ -748,18 +748,35 @@ module.exports = { "1": {
       container.appendChild(title);
       this.header.appendChild(container);
 
+      function createWrapper(tag, content) {
+        var paragraphs = content.split('\n');
+        var wrapper = document.createElement('div');
+
+        paragraphs.forEach(function(p) {
+          var elem = document.createElement(tag);
+          elem.innerHTML = p;
+          wrapper.appendChild(elem);
+        });
+
+        return wrapper;
+      }
+
       // setup question and answer
-      var question = document.createElement('h3');
-      var answer = document.createElement('p');
+      // var question = document.createElement('h3');
+      // var answerWrapper = document.createElement('div');
+      var question;
+      var answer;
       var toggleQA = true; // Math.random() >= 0.5;
 
       if (toggleQA) {
-        question.innerHTML = exercise.question;
-        answer.innerHTML = exercise.answer;
+        question = createWrapper('h3', exercise.question);
+        answer = createWrapper('p', exercise.answer);
       }
       else {
-        question.innerHTML = exercise.answer;
-        answer.innerHTML = exercise.question;
+        question = createWrapper('h3', exercise.answer);
+        answer = createWrapper('p', exercise.question);
+        // question.innerHTML = exercise.answer;
+        // answer.innerHTML = exercise.question;
       }
 
       // make answer blurry at first
